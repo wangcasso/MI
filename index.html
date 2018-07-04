@@ -42,11 +42,52 @@
             margin: 0 .5em;
             color: #424242;
         }
-        .topbar-nav a{
+        .topbar-nav a,.topbar-info a{
             color: #b0b0b0;
         }
-        .topbar-nav a:hover{
+        .topbar-nav a:hover,.topbar-info a:hover{
             color:#fff;
+        }
+        .site-topbar .topbar-cart {
+            width: 120px;
+            margin-left: 15px;
+            position: relative;
+            float: right;
+            display: block;
+            height: 40px;
+            
+        }
+        .site-topbar .cart-mini {
+            position: relative;
+            z-index: 32;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #b0b0b0;
+            background: #424242;
+        }
+        .site-topbar .cart-mini:hover {
+            color: #ff6700;
+            background: #fff;
+        }
+        .site-topbar .cart-mini i {
+            margin-right: 4px;
+            font-size: 20px;
+            line-height: 20px;
+            vertical-align: -4px;
+        }
+        .site-topbar .cart-mini-num {
+            margin-left: -4px;
+        }
+        .site-topbar .topbar-info {
+            line-height: 40px;
+            position: relative;
+            float: right;
+            height: 40px;
+        }
+        .site-topbar .message {
+            padding: 0 10px;
         }
     </style>
 </head>
@@ -75,6 +116,12 @@
                 <span class="sep">|</span>
                 <a href="">Select Region</a>
             </div>
+            <div class="topbar-cart" >
+                <a  class="cart-mini"  href="//static.mi.com/cart/"  onclick="#"><i class="iconfont"></i>购物车<span class="cart-mini-num ">（0）</span></a>
+                
+            </div>
+            <div class="topbar-info" id="J_userInfo">
+                <a rel="nofollow" class="link" href="//order.mi.com/site/login?redirectUrl=https://www.mi.com/index.html" data-needlogin="true" data-stat-id="8e3672ddf71c0ea7" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-8e3672ddf71c0ea7', '//order.mi.com/site/loginredirectUrl=https://www.mi.com/index.html', 'pcpid', '']);">登录</a><span class="sep">|</span><a rel="nofollow" class="link" href="https://account.xiaomi.com/pass/register" data-stat-id="22c8aefee25ceef7" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-22c8aefee25ceef7', 'https://account.xiaomi.com/pass/register', 'pcpid', '']);">注册</a>        <span class="sep">|</span><span class="message"><a rel="nofollow" href="//order.mi.com/message/list" data-stat-id="c1e89f83c70afdf4" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-c1e89f83c70afdf4', '//order.mi.com/message/list', 'pcpid', '']);">消息通知<i class="J_miMessageTotal"></i></a></span></div>
         </div>
     </div>
 </body>
