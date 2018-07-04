@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米账号 - 登陆</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <style>
+        body {
+            background: #f5f5f5;
+            color: #757575;
+            font-size: 14px;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+
+        input::-webkit-input-placeholder {
+            color: #9d9d9d;
+        }
+
+        input::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #9d9d9d;
+        }
+
+        input:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #9d9d9d;
+        }
+
+        input:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #9d9d9d;
+        }
+
+        .h_panel {
+            width: 1130px;
+            margin: 0 auto;
+        }
+
+        .h_logo {
+            width: 200px;
+            height: 98px;
+            background: url("images/login_img/mistore_logo.png") no-repeat;
+        }
+
+        .h_logo a {
+            display: block;
+            height: 98px;
+            text-indent: -9999em;
+        }
+
+        .login_banner_panel {
+            background: #1e2f40;
+            width: 100%;
+            height: 588px;
+            position: relative;
+            left: 0;
+            top: 0px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background: url("images/login_img/banner.jpg") no-repeat center;
+            padding-top: 1px;
+        }
+
+        .login_banner_panel .bannerhref {
+            display: block;
+            height: 588px;
+            position: absolute;
+            width: 100%;
+            text-indent: -9999em;
+        }
+
+        .n-footer {
+            background: #f5f5f5;
+            margin-top: 68px;
+            position: relative;
+            z-index: 4;
+            height: 80px;
+            text-align: center;
+        }
+
+        .clearfix:after {
+            display: block;
+            content: "\20";
+            height: 0;
+            clear: both;
+            overflow: hidden;
+            visibility: hidden
+        }
+
+        .clearfix {
+            *zoom: 1
+        }
+
+        .nf-link-area {
+            text-align: center;
+        }
+
+        .nf-link-area li {
+            display: inline-block;
+        }
+
+        .nf-link-area a {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .nf-intro {
+            padding: 10px;
+        }
+
+        .loginBox {
+            width: 410px;
+            height: 524px;
+            position: relative;
+            z-index: 2;
+            margin-left: 720px;
+            background: #fff;
+            margin-top: 32px
+        }
+
+        .loginBox .mainBox {
+            padding: 27px 0 24px;
+            text-align: center;
+            font-size: 24px;
+            color: #e0e0e0;
+        }
+
+        .mainBox a {
+            color: #666;
+        }
+
+        .loginBox .mainBox .now,
+        .mainBox a:hover {
+            color: #f56600;
+        }
+
+        .mainBox .line {
+            width: 1px;
+            height: 24px;
+            margin: 0 35px 0 42px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .login_area1 {
+            width: 348px;
+            margin: 0 31px;
+        }
+
+        .login_area1 input {
+            height: 22px;
+            width: 100%;
+            line-height: 22px;
+            padding: 13px 16px 13px 14px;
+            display: block;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input,
+        button {
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        }
+
+        .tenpadding {
+            height: 10px;
+        }
+
+        .labelbox {
+            display: block;
+            margin-bottom: 14px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .login_area1 .login_form .btnadpt {
+            background-color: #ef5b00;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            margin-bottom: 14px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            padding: 0;
+        }
+        .lineheight{
+            line-height: 16px;
+            overflow: hidden;
+            margin-top: -5px;
+        }
+        .btnadpt.btn_gray {
+            color: #ef5b00;
+            border: 0 none;
+            height: auto;
+            line-height: normal;
+            margin: 0;
+            float: left;
+        }
+
+        .n_links_area {
+            float: right;
+        }
+
+        .other_login_type {
+            padding-top: 0;
+            position: absolute;
+            top: 427px;
+            width: 84%;
+        }
+
+        .oth_type_tit {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 10px;
+            padding-bottom: 10px\9;
+        }
+
+        .n_links_area a {
+            color: #999;
+        }
+
+        
+
+        .oth_type_txt {
+            font-size: 14px;
+            color: #b0b0b0;
+            margin: 0 auto;
+            text-align: center;
+            width: 100% \9;
+        }
+        .oth_type_links{
+            text-align: center;
+        }
+        .oth_type_links a {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+        }
+
+        .iconfont{
+            font-size: 32px;
+        }
+        .icon_type{
+            margin: 0 17px;
+            display: inline-block;
+        }
+        .icon-qq:hover{
+            color:#0288d1;
+        }
+        .icon-weibo:hover{
+            color:#d32f2f;
+        }
+        .icon-zhifubao:hover{
+            color:#0ae;
+        }
+        .icon-weixin:hover{
+            color:#00d20d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h_panel">
+        <div class="h_logo">
+            <a href="index.html"></a>
+        </div>
+    </div>
+    <div class="login_banner_panel">
+        <a href="#" class="bannerhref"></a>
+        <div class="h_panel">
+            <div class="loginBox">
+                <div class="mainBox">
+                    <a class="navtab-link now" href="#" data-tab="pwd">帐号登录</a>
+                    <span class="line"></span>
+                    <a class="navtab-link" href="#" data-tab="qr">扫码登录</a>
+                </div>
+                <div class="login_area1">
+                    <form action="php/login.php" method="POST" class="login_form">
+                        <div class="tenpadding"></div>
+                        <div class="labelbox">
+                            <input type="text" placeholder="邮箱/手机号码/小米ID">
+
+                        </div>
+                        <div class="labelbox">
+                            <input type="password" placeholder="密码">
+
+                        </div>
+                        <div class="tenpadding"></div>
+                        <input class="btnadpt" id="login-button" type="submit" value="登录">
+
+                    </form>
+                    <div class="lineheight">
+                        <a href="javascript:;" class="btnadpt btn_gray">手机短信登录/注册</a>
+    
+                        <div class="n_links_area">
+                            <a class="outer-link" href="#">立即注册</a>
+                            <span>|</span>
+                            <a class="outer-link" href="#">忘记密码？</a>
+                        </div>
+
+                    </div>
+                    <div class="other_panel clearfix">
+                        <!-- 其他登录方式 s -->
+                        <div style="display: block;" class="other_login_type sns-login-container" id="custom_display_16">
+                            <fieldset class="oth_type_tit">
+                                <legend align="center" class="oth_type_txt">其他方式登录</legend>
+                            </fieldset>
+                            <div class="oth_type_links">
+                                <a class="icon_type btn_qq sns-login-link" data-type="qq" href="#" title="QQ登录">
+                                    <i class="iconfont icon-qq"></i>
+                                </a>
+                                <a class="icon_type btn_weibo sns-login-link" data-type="weibo" href="#" title="微博登录">
+                                    <i class="iconfont icon-weibo"></i>
+                                </a>
+                                <a class="icon_type btn_alipay sns-login-link" data-type="alipay" href="#" title="支付宝登录">
+                                    <i class="iconfont icon-zhifubao"></i>
+                                </a>
+                                <a class="icon_type btn_weixin sns-login-link" data-type="weixin" href="#" title="微信登录">
+                                    <i class="iconfont icon-weixin"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 其他登录方式 e -->
+                        <p class="acq_tips" style="display: none;"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="n-footer">
+        <div class="nf-link-area clearfix">
+            <ul class="lang-select-list">
+                <li>
+                    <a href="javascript:void(0)" data-lang="zh_CN" class="lang-select-li current">简体</a>|</li>
+                <li>
+                    <a href="#">繁体</a>|</li>
+                <li>
+                    <a href="#">English</a>|</li>
+                <li>
+                    <a href="#">常见问题</a>|</li>
+                <li>
+                    <a href="#">隐私政策</a>
+                </li>
+            </ul>
+        </div>
+        <p class="nf-intro">小米公司版权所有-京ICP备10046444-
+            <a class="beian-record-link" href="#">
+                <span>
+                    <img src="images/login_img/ghs.png">
+                </span>京公网安备11010802020134号</a>-京ICP证110507号</p>
+    </div>
+</body>
+
+</html>
