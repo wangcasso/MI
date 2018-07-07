@@ -6,132 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小米</title>
     <link rel="stylesheet" href="css/reset.css">
-    <style>
-        .main{
-            width:1226px;
-            margin: 0 auto
-        }
-        .top_banner_bar{
-            width:100%;
-            height:120px;
-            background-image: url("images/site-bn-bar/ad.jpg");
-            background-position: center 0;
-        }
-        .top_banner_bar a{
-            display: block;
-            height:120px;
-            width:100%;
-        }
-        .site-topbar{
-            position: relative;
-            z-index: 30;
-            height: 40px;
-            font-size: 12px;
-            color: #b0b0b0;
-            background: #333;
-        }
-        .container{
-            width: 1226px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        .topbar-nav{
-            float: left;
-            height: 40px;
-            line-height: 40px;
-            overflow: hidden;
-        }
-        .site-topbar .sep{
-            margin: 0 .5em;
-            color: #424242;
-        }
-        .topbar-nav a,.topbar-info a{
-            color: #b0b0b0;
-        }
-        .topbar-nav a:hover,.topbar-info a:hover{
-            color:#fff;
-        }
-        .site-topbar .topbar-cart {
-            width: 120px;
-            margin-left: 15px;
-            position: relative;
-            float: right;
-            display: block;
-            height: 40px;
-            
-        }
-        .site-topbar .cart-mini {
-            position: relative;
-            z-index: 32;
-            display: block;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-            color: #b0b0b0;
-            background: #424242;
-        }
-        .site-topbar .cart-mini:hover {
-            color: #ff6700;
-            background: #fff;
-        }
-        .site-topbar .cart-mini i {
-            margin-right: 4px;
-            font-size: 20px;
-            line-height: 20px;
-            vertical-align: -4px;
-        }
-        .site-topbar .cart-mini-num {
-            margin-left: -4px;
-        }
-        .site-topbar .topbar-info {
-            line-height: 40px;
-            position: relative;
-            float: right;
-            height: 40px;
-        }
-        .site-topbar .message {
-            padding: 0 10px;
-        }
-        .container .header-logo {
-            float: left;
-            width: 62px;
-            margin-top: 22px;
-        }
-        .container .logo {
-            position: relative;
-            display: block;
-            width: 55px;
-            height: 55px;
-            overflow: hidden;
-            _zoom: 1;
-            background-color: #ff6700;
-        }
-        .container .logo:before {
-            background: url(images/site-header/header-logo/mi-logo.png) no-repeat 50% 50%;
-            opacity: 1;
-            filter: alpha(opacity=100)\9;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 1;
-            width: 55px;
-            height: 55px;
-            content: '';
-            -webkit-transform-origin: 50% 50%;
-            -ms-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-            -webkit-transition: all .2s;
-            transition: all .2s;
-        }
-        .ir {
-            display: block;
-            text-align: left;
-            overflow: hidden;
-            _zoom: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="css/mi.css">
+    <link rel="icon" href="images/tab.img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -171,9 +47,56 @@
     <div class="main">
         <div class="container">
             <div class="header-logo">
-                    <a class="logo ir" href="//www.mi.com/index.html" title="小米官网" data-stat-id="2fae68a428eb81db" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-2fae68a428eb81db', '//www.mi.com/index.html', 'pcpid', '']);"></a>
-                    </div>
-            
+                    <a class="logo ir" href="//www.mi.com/index.html" ></a>
+            </div>
+            <div class="header_nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="http://">小米手机</a></li>
+                    <li class="nav_item"><a href="http://">红米</a></li>
+                    <li class="nav_item"><a href="http://">电视</a></li>
+                    <li class="nav_item"><a href="http://">笔记本</a></li>
+                    <li class="nav_item"><a href="http://">盒子</a></li>
+                    <li class="nav_item"><a href="http://">新品</a></li>
+                    <li class="nav_item"><a href="http://">路由器</a></li>
+                    <li class="nav_item"><a href="http://">智能硬件</a></li>
+                    <li class="nav_item"><a href="http://">服务</a></li>
+                    <li class="nav_item"><a href="http://">社区</a></li>
+                </ul>
+            </div>
+            <input type="text" class='search-text'><button class="search-btn"></button>
+
+        </div>
+        <!-- 左侧导航和轮播图 -->
+        <div class="main">
+            <div class="left_nav">
+
+            </div>
+            <div class="right_autoPic"></div>
+        </div>
+        <!-- 轮播图下广告 -->
+        <div class="main">
+            <div class="hot_goods">
+                <div class="one_six"></div>
+                <div class="pic"></div>
+                <div class="pic"></div>
+                <div class="pic"></div>
+            </div>
+        </div>
+        <!-- 小米闪购 -->
+        <div class="mi_fast_shop">
+            <div class="endTime"></div>
+            <div class="goods_row">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>

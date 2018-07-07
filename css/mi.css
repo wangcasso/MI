@@ -1,0 +1,133 @@
+.main{
+    width:1226px;
+    margin: 0 auto
+}
+.top_banner_bar{
+    width:100%;
+    height:120px;
+    background-image: url("../images/site-bn-bar/ad.jpg");
+    background-position: center 0;
+}
+.top_banner_bar a{
+    display: block;
+    height:120px;
+    width:100%;
+}
+.site-topbar{
+    position: relative;
+    z-index: 30;
+    height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #333;
+}
+.container{
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.topbar-nav{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.site-topbar .sep{
+    margin: 0 .5em;
+    color: #424242;
+    float: left;
+}
+.topbar-nav a,.topbar-info a{
+    color: #b0b0b0;
+    float: left;
+}
+.topbar-nav a:hover,.topbar-info a:hover{
+    color:#fff;
+}
+.site-topbar .topbar-cart {
+    width: 120px;
+    margin-left: 15px;
+    position: relative;
+    float: right;
+    display: block;
+    height: 40px;
+    
+}
+.site-topbar .cart-mini {
+    position: relative;
+    z-index: 32;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+}
+.site-topbar .cart-mini:hover {
+    color: #ff6700;
+    background: #fff;
+}
+.site-topbar .cart-mini i {
+    margin-right: 4px;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: -4px;
+}
+.site-topbar .cart-mini-num {
+    margin-left: -4px;
+}
+.site-topbar .topbar-info {
+    line-height: 40px;
+    position: relative;
+    float: right;
+    height: 40px;
+}
+.site-topbar .message {
+    padding: 0 10px;
+}
+.container .header-logo {
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+}
+.container .logo {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    _zoom: 1;
+    background-color: #ff6700;
+}
+.container .logo:before {
+    background: url('../images/site-header/header-logo/mi-logo.png') no-repeat 50% 50%;
+    opacity: 1;
+    filter: alpha(opacity=100)\9;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    content: '';
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.ir {
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    _zoom: 1;
+}
+.site-header .header-nav {
+    float: left;
+    width: 850px;
+}
+.header_nav .nav_list .nav_item{
+    float: left;
+}
