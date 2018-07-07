@@ -7,6 +7,10 @@
     <title>小米</title>
     <link rel="stylesheet" href="css/reset.css">
     <style>
+        .main{
+            width:1226px;
+            margin: 0 auto
+        }
         .top_banner_bar{
             width:100%;
             height:120px;
@@ -30,7 +34,6 @@
             width: 1226px;
             margin-right: auto;
             margin-left: auto;
-            height:40px;
         }
         .topbar-nav{
             float: left;
@@ -89,9 +92,49 @@
         .site-topbar .message {
             padding: 0 10px;
         }
+        .container .header-logo {
+            float: left;
+            width: 62px;
+            margin-top: 22px;
+        }
+        .container .logo {
+            position: relative;
+            display: block;
+            width: 55px;
+            height: 55px;
+            overflow: hidden;
+            _zoom: 1;
+            background-color: #ff6700;
+        }
+        .container .logo:before {
+            background: url(images/site-header/header-logo/mi-logo.png) no-repeat 50% 50%;
+            opacity: 1;
+            filter: alpha(opacity=100)\9;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            width: 55px;
+            height: 55px;
+            content: '';
+            -webkit-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+        .ir {
+            display: block;
+            text-align: left;
+            overflow: hidden;
+            _zoom: 1;
+        }
     </style>
 </head>
 <body>
+    
     <div class="top_banner_bar">
         <a href="#"></a>
     </div>
@@ -122,6 +165,15 @@
             </div>
             <div class="topbar-info" id="J_userInfo">
                 <a rel="nofollow" class="link" href="//order.mi.com/site/login?redirectUrl=https://www.mi.com/index.html" data-needlogin="true" data-stat-id="8e3672ddf71c0ea7" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-8e3672ddf71c0ea7', '//order.mi.com/site/loginredirectUrl=https://www.mi.com/index.html', 'pcpid', '']);">登录</a><span class="sep">|</span><a rel="nofollow" class="link" href="https://account.xiaomi.com/pass/register" data-stat-id="22c8aefee25ceef7" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-22c8aefee25ceef7', 'https://account.xiaomi.com/pass/register', 'pcpid', '']);">注册</a>        <span class="sep">|</span><span class="message"><a rel="nofollow" href="//order.mi.com/message/list" data-stat-id="c1e89f83c70afdf4" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-c1e89f83c70afdf4', '//order.mi.com/message/list', 'pcpid', '']);">消息通知<i class="J_miMessageTotal"></i></a></span></div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+            <div class="header-logo">
+                    <a class="logo ir" href="//www.mi.com/index.html" title="小米官网" data-stat-id="2fae68a428eb81db" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-2fae68a428eb81db', '//www.mi.com/index.html', 'pcpid', '']);"></a>
+                    </div>
+            
         </div>
     </div>
 </body>
