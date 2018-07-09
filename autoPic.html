@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #box{
+        width:1226px;
+        position: relative;
+    }
+    #box div{
+        width:1226px;
+        height:460px;
+        position: relative;
+    }
+    #box .autoPic{
+        width:1226px;
+        height:460px;;
+    }
+        #left{
+            position: absolute;
+            top:50%;
+            margin-top: -35px;
+            display: block;
+            width: 41px;
+            height: 69px;
+            z-index: 10;
+            overflow: hidden;
+            background: url(images/right_autoPic/icon-slides.png);
+            left: 234px;
+            background-position: -84px 50%;
+        }
+        
+        #right{
+            position: absolute;
+            top:50%;
+            margin-top: -35px;
+            display: block;
+            width: 41px;
+            height: 69px;
+            z-index: 10;
+            overflow: hidden;
+            background: url(images/right_autoPic/icon-slides.png);
+            right: 1px;
+            background-position: -125px 50%;
+        }
+        #left:hover{
+            background-position: 0 50%;
+        }
+        #right:hover{
+            background-position: -42px 50%;
+        }
+        #box img{
+            position: absolute;
+
+        }
+    </style>
+</head>
+<body id='body'>
+    <div id='box' >
+            <a href="#"><img class="autoPic" src="images/right_autoPic/00.jpg" alt=""></a>
+            <a href="#"><img class="autoPic" src="images/right_autoPic/01.jpg" alt=""></a>
+            <a href="#"><img class="autoPic" src="images/right_autoPic/02.jpg" alt=""></a>
+            <a href="#"><img class="autoPic" src="images/right_autoPic/03.jpg" alt=""></a>
+            <a href="#"><img class="autoPic" src="images/right_autoPic/04.jpg" alt=""></a>
+            <a href="#"><img class="autoPic" src="images/right_autoPic/05.jpg" alt=""></a>
+        <a href="#" id="right"></a>
+        <a href="#" id="left"></a>
+    </div>
+    <script src='autoPic.js'></script>
+    <script>
+        
+        
+       
+    </script>
+</body>
+</html>
