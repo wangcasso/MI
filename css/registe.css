@@ -1,0 +1,290 @@
+@charset "UTF-8";
+.registe {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  box-pack: center;
+  -ms-flex-pack: center; }
+  .registe .mauto, .registe .regbox {
+    margin: 0 auto; }
+  .registe .wrap {
+    padding-bottom: 80px;
+    padding-top: 100px \9; }
+  .registe .layout {
+    width: 854px;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+  .registe .n-frame {
+    background: #fff;
+    padding: 34px 34px 0;
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    min-height: 400px;
+    _height: 400px; }
+  .registe .device-frame {
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    padding-top: 0; }
+  .registe .title-item {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    clear: both; }
+  .registe .device-frame {
+    padding-bottom: 30px; }
+    .registe .device-frame .title-item {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+  .registe .c_b:before, .registe .c_b:after {
+    content: "";
+    display: block; }
+  .registe .c_b:after {
+    clear: both; }
+  .registe .external_logo_area {
+    padding-bottom: 40px;
+    display: block; }
+  .registe .milogo {
+    width: 49px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    cursor: default;
+    background-image: url(../images/registe/milogo.png); }
+  .registe a {
+    color: #46639c; }
+  .registe .t_c {
+    text-align: center; }
+  .registe .title_big30 {
+    font-size: 30px;
+    font-weight: normal; }
+  .registe .ft14, .registe .regbox h4, .registe .n_succ h4, .registe .acc_conversion {
+    font-size: 14px; }
+  .registe .listwrap {
+    padding-bottom: 15px;
+    position: relative; }
+  .registe .listwrap_inside_panel .listwrap {
+    float: left; }
+  .registe .regbox {
+    width: 332px;
+    padding: 30px 0;
+    line-height: 20px; }
+    .registe .regbox .tit_normal {
+      padding-bottom: 5px;
+      color: #333;
+      font-weight: normal; }
+  .registe .privacy_box {
+    text-align: center;
+    padding-top: 40px; }
+  .registe .msg {
+    color: #9d9d9d; }
+    .registe .msg a {
+      color: #333; }
+  .registe .tits {
+    height: 40px;
+    padding-left: 14px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #e8e8e8;
+    color: #555;
+    cursor: pointer; }
+  .registe .c_b {
+    zoom: 1; }
+  .registe .n_checked {
+    padding: 10px 0;
+    cursor: pointer;
+    display: inline-block; }
+  .registe .n_checked.now .icon_select, .registe .checkbox .now .icon_select, .registe .checkbox_container.now .icon_select {
+    background: url(../images/registe/v.png); }
+  .registe .ftbold, .registe .msg em, .registe .msg a {
+    font-weight: bold; }
+  .registe .tits tt, .registe .tits p {
+    float: left;
+    width: 275px;
+    border-right: 1px solid #e8e8e8;
+    cursor: pointer; }
+  .registe .icon_cirarr {
+    float: right;
+    background: url(../images/registe/icon_user.png);
+    width: 16px;
+    height: 16px;
+    margin: 11px 12px 0 12px; }
+  .registe .country-container-panel {
+    width: 100%;
+    background: #fff;
+    height: 270px;
+    line-height: 30px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    z-index: 98;
+    display: none; }
+  .registe .search-code {
+    padding: 10px; }
+  .registe em, .registe tt, .registe i {
+    font-style: normal;
+    font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif; }
+  .registe .search-code-input {
+    width: 274px;
+    height: 22px;
+    line-height: 22px;
+    padding: 5px 10px 5px 10px;
+    display: block;
+    border: 1px solid #e0e0e0; }
+  .registe input {
+    color: #333; }
+  .registe .country-container-panel .header, .registe .country-container-panel h6 {
+    background: #fcdecc;
+    padding-left: 10px;
+    margin-bottom: 6px;
+    line-height: 30px;
+    color: #ef5b00 !important; }
+  .registe .country-container-panel .record, .registe .country-container-panel p {
+    padding: 0 10px;
+    line-height: 39px;
+    clear: both;
+    overflow: hidden;
+    color: #000;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer; }
+  .registe .country-container-panel .record span {
+    height: 39px;
+    overflow: hidden; }
+  .registe .country-container-panel .record-country {
+    float: left;
+    max-width: 74%;
+    color: #000;
+    cursor: pointer; }
+  .registe .country-container-panel .record-code {
+    float: right;
+    max-width: 20%;
+    color: #9d9d9d; }
+  .registe .country-container-panel .header {
+    cursor: default; }
+  .registe .region_tip_text {
+    margin-top: -10px;
+    margin-bottom: 15px; }
+  .registe .listwrap_inside_panel .tits {
+    width: 54px;
+    text-align: center;
+    padding: 0 9px; }
+  .registe .listwrap_inside_panel .tits p {
+    width: auto;
+    border-right: 0 none; }
+  .registe .icon_arrow {
+    float: left;
+    margin: 17px 0 0 10px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #9d9d9d transparent transparent transparent; }
+  .registe .listwrap_inside_panel .country-container-panel {
+    width: 332px; }
+  .registe .pb15, .registe .inputbg {
+    padding-bottom: 15px; }
+  .registe .listwrap_inside_panel .inputbg {
+    float: left; }
+  .registe .inputbg input {
+    width: 310px; }
+  .registe .listwrap_inside_panel .inputbg input {
+    width: 236px; }
+  .registe .err_label {
+    border: 1px solid #f66 !important; }
+  .registe .labelbox, .registe .input_bg, .registe .tits_list, .registe .borderbox {
+    border: 1px solid #e8e8e8; }
+  .registe .labelbox, .registe .input_bg {
+    height: 40px;
+    line-height: 40px;
+    display: inline-block; }
+  .registe .listwrap_inside_panel .labelbox {
+    margin-left: -1px;
+    position: relative;
+    z-index: 3; }
+  .registe input {
+    background: none;
+    border: 0 none; }
+  .registe .labelbox input, .registe .input_bg input {
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+    display: inline-block; }
+  .registe .err_tip, .registe .err_tip_independ {
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #f66;
+    display: none; }
+  .registe .err_tip {
+    margin-top: -8px; }
+  .registe .icon_error, .registe .err_tip_independ {
+    background-image: url(../images/registe/1.png);
+    background-repeat: no-repeat;
+    _background-image: none; }
+  .registe .icon_error {
+    width: 14px;
+    height: 14px;
+    margin: -1px 5px 0 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle; }
+  .registe .err_tip span {
+    vertical-align: middle; }
+  .registe .btn332 {
+    width: 330px;
+    height: 42px;
+    margin: 0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    overflow: hidden; }
+  .registe .btn_reg_1 {
+    background-color: #ff6700;
+    margin-top: 15px;
+    border: 1px solid rgba(186, 186, 186, 0.3);
+    color: #fff; }
+  .registe input[type="button"], .registe input[type="submit"], .registe input[type="reset"], .registe a {
+    -webkit-appearance: none;
+    appearance: none; }
+  .registe .other_register_area {
+    padding-bottom: 20px; }
+  .registe .btn_reg_2 {
+    background: #fff;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    color: #7c7c7c; }
+  .registe .facebook_area {
+    display: none !important; }

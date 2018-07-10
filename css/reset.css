@@ -13,3 +13,6 @@ a{
 img,fieldset{
 	border:none;
 }
+a, label, :focus {
+    outline: 0 none;
+}
