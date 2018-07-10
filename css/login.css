@@ -1,0 +1,218 @@
+@charset "UTF-8";
+.login body {
+  background: #fff;
+  color: #757575;
+  font-size: 14px;
+  font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif; }
+
+.login input::-webkit-input-placeholder {
+  color: #9d9d9d; }
+
+.login input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9d9d9d; }
+
+.login input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9d9d9d; }
+
+.login input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9d9d9d; }
+
+.login .h_panel {
+  width: 1130px;
+  margin: 0 auto; }
+
+.login .h_logo {
+  width: 200px;
+  height: 98px;
+  background: url("../images/login_img/mistore_logo.png") no-repeat; }
+
+.login .h_logo a {
+  display: block;
+  height: 98px;
+  text-indent: -9999em; }
+
+.login .login_banner_panel {
+  background: #1e2f40;
+  width: 100%;
+  height: 588px;
+  position: relative;
+  left: 0;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background: url("../images/login_img/banner.jpg") no-repeat center;
+  padding-top: 1px; }
+
+.login .login_banner_panel .bannerhref {
+  display: block;
+  height: 588px;
+  position: absolute;
+  width: 100%;
+  text-indent: -9999em; }
+
+.login .n-footer {
+  background: #fff;
+  margin-top: 68px;
+  position: relative;
+  z-index: 4;
+  height: 80px;
+  text-align: center; }
+
+.login .clearfix:after {
+  display: block;
+  content: "\20";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
+
+.login .clearfix {
+  *zoom: 1; }
+
+.login .nf-link-area {
+  text-align: center; }
+
+.login .nf-link-area li {
+  display: inline-block; }
+
+.login .nf-link-area a {
+  display: inline-block;
+  padding: 0 10px; }
+
+.login .nf-intro {
+  padding: 10px; }
+
+.login .loginBox {
+  width: 410px;
+  height: 524px;
+  position: relative;
+  z-index: 2;
+  margin-left: 720px;
+  background: #fff;
+  margin-top: 32px; }
+
+.login .loginBox .mainBox {
+  padding: 27px 0 24px;
+  text-align: center;
+  font-size: 24px;
+  color: #e0e0e0; }
+
+.login .mainBox a {
+  color: #666; }
+
+.login .loginBox .mainBox .now,
+.login .mainBox a:hover {
+  color: #f56600; }
+
+.login .mainBox .line {
+  width: 1px;
+  height: 24px;
+  margin: 0 40px 0 35px;
+  border: 1px solid #e0e0e0; }
+
+.login .login_area1 {
+  width: 348px;
+  margin: 0 31px; }
+
+.login .login_area1 input {
+  height: 22px;
+  width: 100%;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #333; }
+
+.login input,
+.login button {
+  font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+
+.login .tenpadding {
+  height: 10px; }
+
+.login .labelbox {
+  display: block;
+  margin-bottom: 14px;
+  border: 1px solid #e0e0e0; }
+
+.login .login_area1 .login_form .btnadpt {
+  background-color: #ef5b00;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0; }
+
+.login .lineheight {
+  line-height: 16px;
+  overflow: hidden;
+  margin-top: -5px; }
+
+.login .btnadpt.btn_gray {
+  color: #ef5b00;
+  border: 0 none;
+  height: auto;
+  line-height: normal;
+  margin: 0;
+  float: left; }
+
+.login .n_links_area {
+  float: right; }
+
+.login .other_login_type {
+  padding-top: 0;
+  position: absolute;
+  top: 427px;
+  width: 84%; }
+
+.login .oth_type_tit {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+  padding-bottom: 10px\9; }
+
+.login .n_links_area a {
+  color: #999; }
+
+.login .oth_type_txt {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100% \9; }
+
+.login .oth_type_links {
+  text-align: center; }
+
+.login .oth_type_links a {
+  height: 30px;
+  width: 30px;
+  display: inline-block; }
+
+.login .iconfont {
+  font-size: 32px; }
+
+.login .icon_type {
+  margin: 0 17px;
+  display: inline-block; }
+
+.login .icon-qq:hover {
+  color: #0288d1; }
+
+.login .icon-weibo:hover {
+  color: #d32f2f; }
+
+.login .icon-zhifubao:hover {
+  color: #0ae; }
+
+.login .icon-weixin:hover {
+  color: #00d20d; }

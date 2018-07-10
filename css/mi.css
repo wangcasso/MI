@@ -1111,6 +1111,10 @@
         border-color: #ff6700;
         background: #fff;
         color: #ff6700; }
+      .index .site-footer .footer-links .col-contact .btn-line-primary:hover {
+        color: #fff;
+        background-color: #f25807;
+        border-color: #f25807; }
       .index .site-footer .footer-links .col-contact .btn-small {
         width: 118px;
         height: 28px;
@@ -1131,15 +1135,18 @@
       float: left;
       color: #b0b0b0; }
       .index .site-info .info-text p {
-        margin: 0;
-        line-height: 18px; }
-      .index .site-info .info-text .sites a {
-        color: #757575; }
-      .index .site-info .info-text .sites a:hover {
-        color: #ff6700; }
-      .index .site-info .info-text .sep {
-        margin: 0 .25em;
-        font-family: sans-serif; }
+        margin: 0; }
+      .index .site-info .info-text .sites {
+        font-size: 0px; }
+        .index .site-info .info-text .sites a {
+          font-size: 12px;
+          color: #757575; }
+        .index .site-info .info-text .sites a:hover {
+          color: #ff6700; }
+        .index .site-info .info-text .sites .sep {
+          margin: 0 .25em;
+          font-family: sans-serif;
+          font-size: 12px; }
       .index .site-info .info-text a {
         color: #b0b0b0; }
     .index .site-info .info-links {
