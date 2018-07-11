@@ -221,6 +221,7 @@
         background: #ff6700;
         color: #fff; }
       .index .search .search_form .hot_words a:hover {
+        background: #ff6700;
         color: #fff; }
   .index .search_form:hover .search-text, .index .search_form:hover .search-btn {
     border-color: #ff6700; }
@@ -965,6 +966,24 @@
           border-color: #ff6700;
           background-color: #f5f5f5;
           background-color: transparent; }
+      .index .content .box_bd .innerbox .xm-controls-block-small .control {
+        width: 20px;
+        height: 24px;
+        padding: 12px 0;
+        font-size: 18px;
+        line-height: 24px; }
+      .index .content .box_bd .innerbox .xm-controls .control {
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        opacity: 0;
+        filter: alpha(opacity=0) \9;
+        -webkit-transition: all .6s;
+        transition: all .6s; }
+      .index .content .box_bd .innerbox .control-next {
+        right: 0; }
+      .index .content .box_bd .innerbox .control-prev {
+        left: 0; }
   .index .video {
     padding-bottom: 60px; }
     .index .video .more {
@@ -1052,6 +1071,10 @@
           margin: 0;
           font-size: 12px;
           color: #b0b0b0; }
+  .index .main {
+    width: 1226px;
+    overflow: hidden;
+    margin: 0 auto; }
   .index .site-footer .footer-service {
     padding: 27px 0;
     border-bottom: 1px solid #e0e0e0; }

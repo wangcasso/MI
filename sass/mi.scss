@@ -253,7 +253,7 @@
                 color:#fff;
             }
             .hot_words a:hover{
-                
+                background: #ff6700;
                 color: #fff;
             }
         }
@@ -1183,6 +1183,28 @@
                             }
                     }
                 }
+                .xm-controls-block-small .control {
+                    width: 20px;
+                    height: 24px;
+                    padding: 12px 0;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .xm-controls .control {
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -20px;
+                    opacity: 0;
+                    filter: alpha(opacity=0)\9;
+                    -webkit-transition: all .6s;
+                    transition: all .6s;
+                }
+                .control-next {
+                    right: 0;
+                }
+                .control-prev {
+                    left: 0;
+                }
             }
         }
     }
@@ -1292,6 +1314,11 @@
     }
 
     // 底部
+    .main{
+        width:1226px;
+        overflow: hidden;
+        margin: 0 auto
+    }
     .site-footer{
         .footer-service {
             padding: 27px 0;
@@ -1439,7 +1466,8 @@
             background: url(../images/index/footer_login/slogan2016.png) no-repeat center 0;
         }
     }
-    // /侧边栏/ 
+    //底部结束
+    // /侧边栏开始/ 
     .home-right-bar {
         position: fixed;
         bottom: 70px;

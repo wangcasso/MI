@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>详情页</title>
+    <link rel="icon" href="images/index/tab.img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/reset.css">
     <script src="js/jquery.js"></script>
@@ -13,6 +14,7 @@
 
 <body>
     <div class="product">
+        <div id="package_header">
         <div class="site-topbar">
             <div class="container">
                 <div class="topbar-nav">
@@ -42,12 +44,7 @@
 
                 </div>
                 <div class="topbar-info" id="J_userInfo">
-                    <a class="link" href="login.html">登录</a>
-                    <span class="sep">|</span>
-                    <a class="link" href="https://account.xiaomi.com/pass/register">注册</a>
-                    <span class="sep">|</span>
-                    <span class="message">
-                        <a href="//order.mi.com/message/list">消息通知
+                    <a class="link" href="login.html">登录</a><span class="sep">|</span><a class="link" href="registe.html">注册</a><span class="sep">|</span><span class="message"><a href="//order.mi.com/message/list">消息通知
                             <i class="J_miMessageTotal"></i>
                         </a>
                     </span>
@@ -63,37 +60,37 @@
                 <div class="header_nav">
                     <ul class="nav_list clearfix">
                         <li class="nav_item">
-                            <a href="http://">全部商品分类</a>
+                            <a href="list.html">全部商品分类</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">小米手机</a>
+                            <a href="list.html">小米手机</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">红米</a>
+                            <a href="list.html">红米</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">电视</a>
+                            <a href="list.html">电视</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">笔记本</a>
+                            <a href="list.html">笔记本</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">盒子</a>
+                            <a href="list.html">盒子</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">新品</a>
+                            <a href="list.html">新品</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">路由器</a>
+                            <a href="list.html">路由器</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">智能硬件</a>
+                            <a href="list.html">智能硬件</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">服务</a>
+                            <a href="#">服务</a>
                         </li>
                         <li class="nav_item">
-                            <a href="http://">社区</a>
+                            <a href="#">社区</a>
                         </li>
                     </ul>
                 </div>
@@ -103,14 +100,14 @@
                         <input type="text" class='search-text'>
                         <input class="search-btn iconfont" type="submit" value="">
                         <div class="hot_words">
-                            <a href="#">小米8</a>
-                            <a href="#">小米MIX 2S</a>
+                            <a href="#">小米8</a><a href="#">小米MIX 2S</a>
                         </div>
                     </form>
                 </div>
                 
             </div>
         </div>
+    </div>
         <!-- 新增标题 -->
         <div id="J_proHeader">
             <div class="xm-product-box">
@@ -158,7 +155,7 @@
                         <div class="ui-wrapper" style="max-width: 100%;">
                             <div class="ui-viewport" style="width: 100%; overflow: hidden; position: relative; height: 560px;">
                                 <div id="J_sliderView" class="sliderWrap" style="width: auto; position: relative;">
-                                    <img class="slider done" src="//i8.mifile.cn/a1/pms_1522033932.08715351!560x560.jpg" style=" position: absolute; width: 560px; z-index: 50; display: block;" ></div></div><div class="ui-controls ui-has-pager ui-has-controls-direction" ><div class="ui-pager ui-default-pager"><div class="ui-pager-item"><a href="" class="ui-pager-link disabled">1</a></div></div><div class="ui-controls-direction"><a class="ui-prev disabled" href="">上一张</a><a class="ui-next disabled" href="">下一张</a></div></div></div>
+                                    <img class="slider done" src="images/product/product.jpg" style=" position: absolute; width: 560px; z-index: 50; display: block;" ></div></div><div class="ui-controls ui-has-pager ui-has-controls-direction" ><div class="ui-pager ui-default-pager"><div class="ui-pager-item"><a href="" class="ui-pager-link disabled">1</a></div></div><div class="ui-controls-direction"><a class="ui-prev disabled" href="">上一张</a><a class="ui-next disabled" href="">下一张</a></div></div></div>
                     </div>
                 </div>
                 <div class="pro-info span10">
@@ -212,7 +209,7 @@
                         <!-- 分仓地址 -->
                         <div class="J_addressWrap address-wrap"> <div class="user-default-address" id="J_userDefaultAddress"> <i class="iconfont iconfont-location"></i> <div> <div class="address-info"><span class="item">广东</span><span class="item">深圳市</span><span class="item">宝安区</span><span class="item">沙井街道</span></div> <span class="switch-choose-regions" id="J_switchChooseRegions"> 修改 </span> </div> <div class="product-status active" id="J_productStatus"> <span class="init">正在加载...</span> <span class="sale">有现货</span> <span class="over">该地区暂时缺货</span> <span class="no">暂时无法送达</span> <span class="pre">预售商品</span> <span class="book">预售商品</span> <span class="nohasAddress"></span> <span class="time"></span> </div> </div></div>
                         <!-- 产品版本 -->
-                        <div class="list-wrap" id="J_list">   <div class="pro-choose pro-choose-col2 J_step" data-index="0"> <div class="step-title" data-name="选择版本"> 选择版本  </div> <ul class="step-list step-one clearfix">   <li class="btn btn-biglarge active" data-name="6GB+64GB" data-price="3299元  " data-index="0" data-value="6GB+64GB"> <a href="javascript:void(0);"> <span class="name">6GB+64GB </span>  <span class="price"> 3299元 </span>  </a> </li>      <li class="btn btn-biglarge" data-name="6GB+128GB" data-price="3599元  " data-index="1" data-value="6GB+128GB"> <a href="javascript:void(0);"> <span class="name">6GB+128GB </span>  <span class="price"> 3599元 </span>  </a> </li>      <li class="btn btn-biglarge" data-name="8GB+256GB 尊享版" data-price="3999元  " data-index="2" data-value="8GB+256GB 尊享版"> <a href="javascript:void(0);"> <span class="name">8GB+256GB 尊享版 </span>  <span class="price"> 3999元 </span>  </a> </li>   </ul> </div>    <div class="pro-choose pro-choose-col2 J_step" data-index="1"> <div class="step-title" data-name="选择颜色"> 选择颜色  </div> <ul class="step-list clearfix">    <li class="btn btn-biglarge active" data-id="2181000002" data-cid="1181000002" data-name="小米MIX 2S 6GB+64GB 白色" data-price="3299元" data-value="白色" data-index="0">  <a href="javascript:void(0);">   <img src="images/product/white.png" data-src="//i8.mifile.cn/b2c-mimall-media/3215be39ab4b7fe8d8492d889572d213.png" alt="白色" class="done">   白色 </a> </li>       <li class="btn btn-biglarge " data-id="2181000001" data-cid="1181000001" data-name="小米MIX 2S 6GB+64GB 黑色" data-price="3299元" data-value="黑色" data-index="1">  <a href="javascript:void(0);">   <img src="images/product/black.png" data-src="//i8.mifile.cn/b2c-mimall-media/bc99af80103f531296be0be09811bd7f.png" alt="黑色" class="done">   黑色 </a> </li>   </ul> </div>  <div class="pro-choose list-choose list-choose-small J_service" data-index="0" data-multi="true"> <div class="step-title"> 选择小米提供的保障服务 <a href="//order.mi.com/product/serviceUrl?url=https%3A%2F%2Fcdn.cnbj0.fds.api.mi-img.com%2Fb2c-data-mishop%2F23292dac1b41.html" target="_blank">了解保障服务 &gt;</a> </div> <ul>  <li data-oriprice="299" data-price="299" data-name="意外保障服务" data-bargain_id="2181000032" data-id="2181000032" data-source="common"> <i class="iconfont icon-checkbox"><em>√</em></i> <img src="//i1.mifile.cn/a1/pms_1520499811.22539853.jpg?width=50&amp;height=50"> <div> <span class="name"> 意外保障服务  </span> <p class="desc">手机意外摔落/进水/碾压等损坏</p>  <p class="agreement"> <i class="iconfont icon-checkbox J_read"><em>√</em></i> 我已阅读  <a href="https://api.jr.mi.com/insurance/document/phone_accidentIns.html?insuranceSku=18942&amp;couponFrom=rule" target="_blank">服务条款<span>|</span></a>  <a href="https://api.jr.mi.com/insurance/document/phone_accidentIns.html?insuranceSku=18942&amp;couponFrom=question" target="_blank">常见问题</a>  </p>  <span class="price">  299元  </span> </div> </li>  </ul></div></div>
+                        <div class="list-wrap" id="J_list">   <div class="pro-choose pro-choose-col2 J_step" data-index="0"> <div class="step-title" data-name="选择版本"> 选择版本  </div> <ul class="step-list step-one clearfix">   <li class="btn btn-biglarge active" data-name="6GB+64GB" data-price="3299元  " data-index="0" data-value="6GB+64GB"> <a href="javascript:void(0);"> <span class="name">6GB+64GB </span>  <span class="price"> 3299元 </span>  </a> </li>      <li class="btn btn-biglarge" data-name="6GB+128GB" data-price="3599元  " data-index="1" data-value="6GB+128GB"> <a href="javascript:void(0);"> <span class="name">6GB+128GB </span>  <span class="price"> 3599元 </span>  </a> </li>      <li class="btn btn-biglarge" data-name="8GB+256GB 尊享版" data-price="3999元  " data-index="2" data-value="8GB+256GB 尊享版"> <a href="javascript:void(0);"> <span class="name">8GB+256GB 尊享版 </span>  <span class="price"> 3999元 </span>  </a> </li>   </ul> </div>    <div class="pro-choose pro-choose-col2 J_step" data-index="1"> <div class="step-title" data-name="选择颜色"> 选择颜色  </div> <ul class="step-list clearfix">    <li class="btn btn-biglarge active" data-id="2181000002" data-cid="1181000002" data-name="小米MIX 2S 6GB+64GB 白色" data-price="3299元" data-value="白色" data-index="0">  <a href="javascript:void(0);">   <img src="images/product/white.png" data-src="//i8.mifile.cn/b2c-mimall-media/3215be39ab4b7fe8d8492d889572d213.png" alt="白色" class="done">   白色 </a> </li>       <li class="btn btn-biglarge " data-id="2181000001" data-cid="1181000001" data-name="小米MIX 2S 6GB+64GB 黑色" data-price="3299元" data-value="黑色" data-index="1">  <a href="javascript:void(0);">   <img src="images/product/black.png" data-src="//i8.mifile.cn/b2c-mimall-media/bc99af80103f531296be0be09811bd7f.png" alt="黑色" class="done">   黑色 </a> </li>   </ul> </div>  <div class="pro-choose list-choose list-choose-small J_service" data-index="0" data-multi="true"> <div class="step-title"> 选择小米提供的保障服务 <a href="//order.mi.com/product/serviceUrl?url=https%3A%2F%2Fcdn.cnbj0.fds.api.mi-img.com%2Fb2c-data-mishop%2F23292dac1b41.html" target="_blank">了解保障服务 &gt;</a> </div> <ul>  <li data-oriprice="299" data-price="299" data-name="意外保障服务" data-bargain_id="2181000032" data-id="2181000032" data-source="common"> <i class="iconfont icon-checkbox"><em>√</em></i> <img src="images/product/bao.jpg?width=50&amp;height=50"> <div> <span class="name"> 意外保障服务  </span> <p class="desc">手机意外摔落/进水/碾压等损坏</p>  <p class="agreement"> <i class="iconfont icon-checkbox J_read"><em>√</em></i> 我已阅读  <a href="https://api.jr.mi.com/insurance/document/phone_accidentIns.html?insuranceSku=18942&amp;couponFrom=rule" target="_blank">服务条款<span>|</span></a>  <a href="https://api.jr.mi.com/insurance/document/phone_accidentIns.html?insuranceSku=18942&amp;couponFrom=question" target="_blank">常见问题</a>  </p>  <span class="price">  299元  </span> </div> </li>  </ul></div></div>
                             
                                 <div id="J_relation" class="hide"></div>
                               
