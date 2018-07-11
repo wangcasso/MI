@@ -199,7 +199,9 @@ button {
 .n_links_area {
     float: right;
 }
-
+.n_links_area a:hover{
+    color: #f56600;
+}
 .other_login_type {
     padding-top: 0;
     position: absolute;

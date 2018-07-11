@@ -68,104 +68,102 @@
 dd {
   margin: 0 0 0 40px; }
 
+.ir {
+  display: block;
+  text-align: left;
+  text-indent: -9999em;
+  overflow: hidden;
+  _zoom: 1; }
+
 a:hover {
   color: #ff6700;
   text-decoration: none; }
 
-.mi_list {
+.btn-primary:hover {
+  background-color: #f25807;
+  border-color: #f25807;
+  color: #fff; }
+
+.hide {
+  display: none !important; }
+
+.btn-primary {
+  background: #ff6700;
+  border-color: #ff6700;
+  color: #fff; }
+
+.shoppingCar {
   font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
   color: #333;
-  background-color: #fff;
-  min-width: 1226px; }
-  .mi_list #package_header .main {
-    width: 1226px;
-    overflow: hidden;
-    margin: 0 auto; }
-  .mi_list #package_header .relative {
-    position: relative; }
-  .mi_list #package_header .top_banner_bar a {
-    display: block;
-    height: 120px;
-    width: 100%; }
-  .mi_list #package_header .site-topbar {
+  background-color: #fff; }
+  .shoppingCar .header .site-header {
     position: relative;
-    z-index: 30;
-    height: 40px;
+    z-index: 20;
+    height: 100px; }
+    .shoppingCar .header .site-header .container {
+      position: relative; }
+    .shoppingCar .header .site-header .header-logo {
+      float: left;
+      width: 62px;
+      margin-top: 22px; }
+    .shoppingCar .header .site-header .logo {
+      position: relative;
+      display: block;
+      width: 55px;
+      height: 55px;
+      overflow: hidden;
+      _zoom: 1;
+      background-color: #ff6700; }
+  .shoppingCar .header .site-mini-header {
     font-size: 12px;
-    color: #b0b0b0;
-    background: #333; }
-  .mi_list #package_header .topbar-nav {
-    float: left;
-    height: 40px;
-    line-height: 40px;
-    overflow: hidden; }
-  .mi_list #package_header .site-topbar .sep {
-    margin: 0 .5em;
-    color: #424242;
-    float: left; }
-  .mi_list #package_header .topbar-nav a, .mi_list #package_header .topbar-info a {
-    color: #b0b0b0;
-    float: left; }
-  .mi_list #package_header .topbar-info a {
-    padding: 0 5px; }
-  .mi_list #package_header .topbar-info .sep {
-    margin: 0;
-    color: #424242;
-    float: left; }
-  .mi_list #package_header .topbar-nav a:hover, .mi_list #package_header .topbar-info a:hover {
-    color: #fff; }
-  .mi_list #package_header .site-topbar .topbar-cart {
-    width: 120px;
-    margin-left: 15px;
-    position: relative;
-    float: right;
-    display: block;
-    height: 40px; }
-  .mi_list #package_header .site-topbar .cart-mini {
-    position: relative;
-    z-index: 32;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    color: #b0b0b0;
-    background: #424242; }
-  .mi_list #package_header .site-topbar .cart-mini:hover {
-    color: #ff6700;
-    background: #fff; }
-  .mi_list #package_header .site-topbar .cart-mini i {
-    margin-right: 4px;
-    font-size: 20px;
-    line-height: 20px;
-    vertical-align: -4px; }
-  .mi_list #package_header .site-topbar .cart-mini-num {
-    margin-left: -4px; }
-  .mi_list #package_header .site-topbar .topbar-info {
-    line-height: 40px;
-    position: relative;
-    float: right;
-    height: 40px; }
-  .mi_list #package_header .site-topbar .message {
-    padding: 0 10px;
-    float: left; }
-  .mi_list #package_header .container .header-logo {
-    float: left;
-    width: 62px;
-    margin-top: 22px; }
-  .mi_list #package_header .container .logo {
-    position: relative;
-    display: block;
-    width: 55px;
-    height: 55px;
-    overflow: hidden;
-    _zoom: 1;
-    background-color: #ff6700; }
-  .mi_list #package_header .container .logo:before {
-    background: url("../images/index/site-header/header-logo/mi-logo.png") no-repeat 50% 50%;
-    opacity: 1;
-    filter: alpha(opacity=100) \9;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    border-bottom: 2px solid #ff6700;
+    background: #fff;
+    color: #b0b0b0; }
+    .shoppingCar .header .site-mini-header .header-logo {
+      width: 93px;
+      margin-top: 26px; }
+    .shoppingCar .header .site-mini-header .logo {
+      width: 48px;
+      height: 48px; }
+    .shoppingCar .header .site-mini-header .header-title {
+      float: left;
+      margin-top: 26px; }
+      .shoppingCar .header .site-mini-header .header-title h2 {
+        font-size: 28px;
+        line-height: 48px;
+        font-weight: normal;
+        color: #424242; }
+    .shoppingCar .header .site-mini-header .has-more {
+      height: 48px; }
+      .shoppingCar .header .site-mini-header .has-more h2 {
+        float: left;
+        line-height: 48px;
+        margin-bottom: 0; }
+      .shoppingCar .header .site-mini-header .has-more p {
+        color: #757575;
+        line-height: 1; }
+      .shoppingCar .header .site-mini-header .has-more p {
+        float: left;
+        height: 20px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-left: 15px; }
+    .shoppingCar .header .site-mini-header .topbar-cart, .shoppingCar .header .site-mini-header .topbar-info {
+      position: relative;
+      float: right;
+      _display: inline;
+      height: 40px; }
+    .shoppingCar .header .site-mini-header .topbar-info {
+      line-height: 40px;
+      margin-top: 30px; }
+      .shoppingCar .header .site-mini-header .topbar-info .link, .shoppingCar .header .site-mini-header .topbar-info .user, .shoppingCar .header .site-mini-header .topbar-info .message, .shoppingCar .header .site-mini-header .topbar-info .sep {
+        float: left; }
+      .shoppingCar .header .site-mini-header .topbar-info .link {
+        padding: 0 5px; }
+      .shoppingCar .header .site-mini-header .topbar-info .sep {
+        margin: 0;
+        color: #e0e0e0; }
+  .shoppingCar .header .site-header .logo:before, .shoppingCar .header .site-header .logo:after {
     position: absolute;
     left: 0;
     top: 0;
@@ -178,195 +176,388 @@ a:hover {
     transform-origin: 50% 50%;
     -webkit-transition: all .2s;
     transition: all .2s; }
-  .mi_list #package_header .ir {
-    display: block;
-    text-align: left;
-    overflow: hidden;
-    _zoom: 1;
-    text-indent: -9999em; }
-  .mi_list #package_header .site-header .header-nav {
-    float: left;
-    width: 850px; }
-  .mi_list #package_header .header_nav .nav_list .nav_item {
-    float: left; }
-  .mi_list #package_header .nav_list {
-    margin-left: 30px;
-    overflow: hidden;
-    float: left; }
-  .mi_list #package_header .nav_item a {
-    line-height: 100px;
-    color: #333;
-    margin-left: 20px;
-    font-size: 16px; }
-  .mi_list #package_header .nav_item a:hover {
-    color: #ff6700; }
-  .mi_list #package_header .search {
-    float: right;
-    margin-top: 25px; }
-    .mi_list #package_header .search .search_form {
-      position: relative;
-      width: 296px;
-      height: 50px; }
-      .mi_list #package_header .search .search_form .search-text {
-        position: absolute;
-        top: 0;
-        right: 51px;
-        z-index: 1;
-        width: 223px;
-        height: 48px;
-        padding: 0 10px;
-        border: 1px solid #e0e0e0;
-        font-size: 14px;
-        line-height: 48px;
-        outline: 0;
-        -webkit-transition: all .2s;
-        transition: all .2s; }
-      .mi_list #package_header .search .search_form .search-btn {
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 2;
-        width: 52px;
-        height: 50px;
-        border: 1px solid #e0e0e0;
-        font-size: 24px;
-        line-height: 24px;
-        background: #fff;
-        color: #616161;
-        outline: 0;
-        -webkit-transition: all .2s;
-        transition: all .2s;
-        cursor: pointer; }
-      .mi_list #package_header .search .search_form .hot_words {
-        position: absolute;
-        top: 14px;
-        right: 62px;
-        z-index: 2;
-        text-align: right; }
-        .mi_list #package_header .search .search_form .hot_words a {
-          display: inline-block;
-          margin-left: 5px;
-          padding: 0 5px;
-          font-size: 12px;
-          background: #eee;
-          color: #757575;
-          -webkit-transition: all .2s;
-          transition: all .2s; }
-      .mi_list #package_header .search .search_form .search-btn:hover {
-        background: #ff6700;
-        color: #fff; }
-      .mi_list #package_header .search .search_form .hot_words a:hover {
-        background: #ff6700;
-        color: #fff; }
-  .mi_list #package_header .search_form:hover .search-text, .mi_list #package_header .search_form:hover .search-btn {
-    border-color: #ff6700; }
-  .mi_list .breadcrumbs {
-    height: 40px;
-    font-size: 12px;
-    line-height: 40px;
+  .shoppingCar .header .site-header .logo:before {
+    background: url(../images/shoppingcar/mi-logo.png) no-repeat 50% 50%;
+    opacity: 1;
+    filter: alpha(opacity=100) \9;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .shoppingCar .header .site-header .logo:after {
+    background: url(../images/shoppingcar/mi-home.png) no-repeat 50% 50%;
+    opacity: 0;
+    filter: alpha(opacity=0) \9;
+    margin-left: -55px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .shoppingCar .header .site-mini-header .logo:before, .shoppingCar .header .site-mini-header .logo:after {
+    width: 48px;
+    height: 48px; }
+  .shoppingCar .header .site-header .logo:hover:before {
+    opacity: 0;
+    filter: alpha(opacity=0) \9;
+    -webkit-transform: translate3d(55px, 0, 0);
+    transform: translate3d(55px, 0, 0); }
+  .shoppingCar .header .site-header .logo:hover:after {
+    opacity: 1;
+    filter: alpha(opacity=100) \9;
+    -webkit-transform: translate3d(55px, 0, 0);
+    transform: translate3d(55px, 0, 0); }
+  .shoppingCar .header .site-header .logo:active:after {
+    -webkit-transform: translate3d(55px, 0, 0) scale(0.9);
+    transform: translate3d(55px, 0, 0) scale(0.9); }
+  .shoppingCar .page-main {
     background: #f5f5f5;
-    color: #616161; }
-    .mi_list .breadcrumbs .sep {
-      margin: 0 0.5em;
-      color: #b0b0b0; }
-  .mi_list .container .filter-box {
-    padding: 18px 0; }
-  .mi_list .container .filter-list-wrap, .mi_list .container .filter-selected-list-wrap, .mi_list .container .full-toggle-wrap {
-    border-top: 1px solid #e0e0e0; }
-  .mi_list .container .filter-list-wrap {
-    position: relative; }
-  .mi_list .container .filter-list-wrap:first-child, .mi_list .container .filter-selected-list-wrap:first-child, .mi_list .container .full-toggle-wrap:first-child {
-    border-top: 0; }
-  .mi_list .container .filter-list, .mi_list .container .selected-list {
-    position: relative;
-    padding-left: 70px;
-    min-height: 45px;
-    margin: 0; }
-  .mi_list .container .filter-list {
-    width: 1032px;
-    height: 45px;
-    overflow: hidden;
-    _zoom: 1;
-    -webkit-transition: height .3s ease-in;
-    transition: height .3s ease-in; }
-    .mi_list .container .filter-list a {
-      color: #424242; }
-    .mi_list .container .filter-list a:hover {
-      color: #ff6700; }
-  .mi_list .container .filter-list dt, .mi_list .container .selected-list dt {
-    position: absolute;
-    left: 0;
-    top: 11px;
-    width: 72px;
-    color: #b0b0b0; }
-  .mi_list .container .filter-list dd, .mi_list .container .selected-list dd {
-    float: left;
-    margin: 0; }
-  .mi_list .container .filter-list dd {
-    width: 172px;
-    padding: 12px 0; }
-  .mi_list .container .filter-list dd.active {
-    color: #ff6700; }
-  .mi_list .container .filter-list-wrap .more {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    height: 24px;
-    line-height: 24px;
-    color: #757575; }
-    .mi_list .container .filter-list-wrap .more i {
-      font-size: 24px;
-      line-height: 24px;
-      vertical-align: -4px; }
-  .mi_list .content {
-    padding: 20px 0 100px;
+    padding-top: 38px;
+    padding-bottom: 38px; }
+    .shoppingCar .page-main .loading {
+      padding: 20px 0; }
+    .shoppingCar .page-main .loader {
+      position: relative;
+      margin: 0 auto;
+      width: 4px;
+      height: 20px;
+      background: #ff6700;
+      overflow: visible;
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1); }
+    .shoppingCar .page-main .loader, .shoppingCar .page-main .loader:before, .shoppingCar .page-main .loader:after {
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation-name: loader;
+      animation-name: loader;
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate-reverse;
+      animation-direction: alternate-reverse; }
+    .shoppingCar .page-main .cart-empty {
+      height: 273px;
+      padding-left: 558px;
+      margin: 65px 0 130px;
+      background: url(../i/cart/cart-empty.png) no-repeat 124px 0;
+      color: #b0b0b0;
+      overflow: hidden;
+      _zoom: 1; }
+      .shoppingCar .page-main .cart-empty h2 {
+        margin: 70px 0 15px;
+        font-size: 36px; }
+      .shoppingCar .page-main .cart-empty .login-desc {
+        display: none;
+        margin: 0 0 20px;
+        font-size: 20px;
+        color: #b0b0b0; }
+      .shoppingCar .page-main .cart-empty .btn {
+        width: 170px;
+        height: 48px;
+        line-height: 48px; }
+      .shoppingCar .page-main .cart-empty .btn-login {
+        display: none; }
+    .shoppingCar .page-main .cart-goods-list {
+      background-color: #fff; }
+      .shoppingCar .page-main .cart-goods-list .col-price {
+        width: 75px;
+        padding-right: 84px;
+        text-align: right;
+        color: #424242; }
+      .shoppingCar .page-main .cart-goods-list .col-num {
+        width: 150px;
+        text-align: center;
+        color: #424242; }
+      .shoppingCar .page-main .cart-goods-list .col-total {
+        width: 120px;
+        padding-right: 81px;
+        text-align: right; }
+      .shoppingCar .page-main .cart-goods-list .col-action {
+        width: 80px;
+        text-align: center; }
+      .shoppingCar .page-main .cart-goods-list .col-name {
+        width: 380px; }
+        .shoppingCar .page-main .cart-goods-list .col-name .name, .shoppingCar .page-main .cart-goods-list .col-name .desc {
+          width: 380px;
+          margin: 0; }
+        .shoppingCar .page-main .cart-goods-list .col-name .name a, .shoppingCar .page-main .cart-goods-list .col-name .desc a {
+          color: #ff6700; }
+        .shoppingCar .page-main .cart-goods-list .col-name .name a {
+          color: #424242; }
+        .shoppingCar .page-main .cart-goods-list .col-name .name {
+          line-height: 1;
+          margin-top: 8px;
+          margin-bottom: 8px;
+          font-size: 18px;
+          font-weight: normal;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          _zoom: 1; }
+      .shoppingCar .page-main .cart-goods-list .item-sub-box .tags {
+        margin-bottom: 6px; }
+      .shoppingCar .page-main .cart-goods-list .item-sub-box .col-price {
+        font-size: 16px; }
+      .shoppingCar .page-main .cart-goods-list .item-sub-box .col-num {
+        font-size: 16px; }
+      .shoppingCar .page-main .cart-goods-list .item-sub-box .col-total {
+        color: #ff6700;
+        font-size: 16px; }
+      .shoppingCar .page-main .cart-goods-list .item-sub-box .del {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 12px;
+        color: #757575;
+        font-size: 16px;
+        -webkit-transition: all .3s;
+        transition: all .3s; }
+      .shoppingCar .page-main .cart-goods-list .item-sub-box .del:hover {
+        color: #fff;
+        background-color: #e53935; }
+      .shoppingCar .page-main .cart-goods-list .item-box {
+        padding: 15px 26px 15px 0;
+        border-top: 1px solid #e0e0e0; }
+        .shoppingCar .page-main .cart-goods-list .item-box .del {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          border-radius: 12px;
+          color: #757575;
+          font-size: 16px;
+          -webkit-transition: all .3s;
+          transition: all .3s; }
+        .shoppingCar .page-main .cart-goods-list .item-box .del:hover {
+          color: #fff;
+          background-color: #e53935; }
+        .shoppingCar .page-main .cart-goods-list .item-box .col-total {
+          color: #ff6700;
+          font-size: 16px; }
+        .shoppingCar .page-main .cart-goods-list .item-box .pre-info {
+          margin: 0;
+          font-size: 12px;
+          color: #b0b0b0; }
+        .shoppingCar .page-main .cart-goods-list .item-box .col-price {
+          font-size: 16px; }
+        .shoppingCar .page-main .cart-goods-list .item-box .col-num {
+          font-size: 16px; }
+        .shoppingCar .page-main .cart-goods-list .item-box .col-img {
+          width: 80px;
+          height: 80px;
+          padding-right: 40px;
+          overflow: hidden;
+          _zoom: 1; }
+        .shoppingCar .page-main .cart-goods-list .item-box .tags {
+          margin-bottom: 6px; }
+      .shoppingCar .page-main .cart-goods-list .item-table {
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0; }
+        .shoppingCar .page-main .cart-goods-list .item-table .item-row {
+          display: table-row; }
+        .shoppingCar .page-main .cart-goods-list .item-table .col {
+          display: table-cell;
+          vertical-align: middle; }
+      .shoppingCar .page-main .cart-goods-list .list-head {
+        height: 70px;
+        line-height: 70px;
+        padding-right: 26px;
+        color: #424242; }
+        .shoppingCar .page-main .cart-goods-list .list-head .col {
+          float: left; }
+        .shoppingCar .page-main .cart-goods-list .list-head .icon-checkbox {
+          margin-right: 15px; }
+        .shoppingCar .page-main .cart-goods-list .list-head .col-img {
+          width: 120px; }
+        .shoppingCar .page-main .cart-goods-list .list-head .col-name {
+          width: 380px; }
+      .shoppingCar .page-main .cart-goods-list .col-check {
+        width: 110px; }
+        .shoppingCar .page-main .cart-goods-list .col-check .icon-checkbox {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          line-height: 18px;
+          border: 1px solid #e0e0e0;
+          margin-left: 24px;
+          background-color: #fff;
+          color: #fff;
+          font-size: 20px;
+          text-align: center;
+          vertical-align: middle;
+          position: relative;
+          top: -1px;
+          cursor: pointer; }
+        .shoppingCar .page-main .cart-goods-list .col-check .icon-checkbox-selected {
+          color: #fff;
+          border-color: #ff6700;
+          background-color: #ff6700; }
+      .shoppingCar .page-main .cart-goods-list .change-goods-num {
+        width: 148px;
+        height: 38px;
+        border: 1px solid #e0e0e0;
+        text-align: center;
+        background-color: #fff;
+        position: relative;
+        zoom: 1; }
+        .shoppingCar .page-main .cart-goods-list .change-goods-num a {
+          float: left;
+          width: 38px;
+          height: 38px;
+          line-height: 38px;
+          color: #757575;
+          font-size: 20px;
+          -webkit-transition: all .3s;
+          transition: all .3s; }
+        .shoppingCar .page-main .cart-goods-list .change-goods-num a:hover {
+          background-color: #e0e0e0; }
+        .shoppingCar .page-main .cart-goods-list .change-goods-num input {
+          float: left;
+          width: 72px;
+          height: 38px;
+          line-height: 38px;
+          padding: 0;
+          border-width: 0;
+          color: #424242;
+          font-size: 16px;
+          text-align: center; }
+    .shoppingCar .page-main .raise-buy-box {
+      margin: 20px 0; }
+    .shoppingCar .page-main .cart-bar {
+      height: 50px;
+      text-align: right;
+      background-color: #fff;
+      -webkit-transition: background .3s ease, top .3s ease;
+      transition: background .3s ease, top .3s ease;
+      position: relative; }
+      .shoppingCar .page-main .cart-bar .section-left {
+        float: left; }
+      .shoppingCar .page-main .cart-bar a {
+        -webkit-transition: color .3s;
+        transition: color .3s; }
+      .shoppingCar .page-main .cart-bar .back-shopping {
+        line-height: 50px;
+        margin-left: 32px; }
+      .shoppingCar .page-main .cart-bar .cart-total {
+        margin-left: 16px;
+        padding-left: 16px;
+        border-left: 1px solid #eee;
+        color: #757575; }
+      .shoppingCar .page-main .cart-bar i {
+        font-style: normal; }
+      .shoppingCar .page-main .cart-bar .cart-total i {
+        color: #ff6700; }
+      .shoppingCar .page-main .cart-bar .cart-coudan {
+        color: #757575; }
+        .shoppingCar .page-main .cart-bar .cart-coudan a {
+          margin-left: 3px;
+          color: #ff6700; }
+      .shoppingCar .page-main .cart-bar .activity-money {
+        padding: 0 13px;
+        border-right: 1px solid #eee;
+        color: #757575; }
+      .shoppingCar .page-main .cart-bar .total-price {
+        padding-left: 13px;
+        color: #ff6700; }
+        .shoppingCar .page-main .cart-bar .total-price em {
+          font-style: normal;
+          font-size: 30px; }
+      .shoppingCar .page-main .cart-bar .btn {
+        width: 200px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 18px;
+        margin-left: 50px;
+        vertical-align: top; }
+      .shoppingCar .page-main .cart-bar .no-select-tip {
+        width: 200px;
+        height: 48px;
+        line-height: 48px;
+        position: absolute;
+        top: -58px;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ff6700;
+        color: #ff6700;
+        text-align: center; }
+        .shoppingCar .page-main .cart-bar .no-select-tip .arrow {
+          display: block;
+          width: 0;
+          height: 0;
+          border-style: solid dashed dashed;
+          overflow: hidden;
+          _zoom: 1;
+          position: absolute;
+          left: 50%; }
+        .shoppingCar .page-main .cart-bar .no-select-tip .arrow-a {
+          bottom: -8px;
+          margin-left: -10px;
+          border-width: 8px 10px 0;
+          border-color: #ff6700 transparent transparent;
+          z-index: 1; }
+        .shoppingCar .page-main .cart-bar .no-select-tip .arrow-b {
+          bottom: -7px;
+          margin-left: -8px;
+          border-width: 7px 8px 0;
+          border-color: #fff transparent transparent;
+          z-index: 2; }
+    .shoppingCar .page-main .cart-recommend {
+      margin: 60px 0 0; }
+  .shoppingCar .content {
+    padding: 20px 0 52px;
     background: #f5f5f5; }
-    .mi_list .content .order-list-box {
+    .shoppingCar .content .order-list-box {
       height: 20px;
       margin: 20px 0;
       overflow: hidden;
       position: relative;
       zoom: 1; }
-      .mi_list .content .order-list-box .order-list {
+      .shoppingCar .content .order-list-box .order-list {
         float: left;
         height: 20px;
         margin: 0;
         padding: 0;
         list-style-type: none; }
-        .mi_list .content .order-list-box .order-list li {
+        .shoppingCar .content .order-list-box .order-list li {
           float: left;
           padding: 0 30px;
           border-left: 1px solid #e0e0e0;
           line-height: 20px; }
-          .mi_list .content .order-list-box .order-list li a {
+          .shoppingCar .content .order-list-box .order-list li a {
             color: #424242;
             -webkit-transition: color .2s;
             transition: color .2s; }
-        .mi_list .content .order-list-box .order-list .active a {
+        .shoppingCar .content .order-list-box .order-list .active a {
           color: #ff6700; }
-        .mi_list .content .order-list-box .order-list li.first {
+        .shoppingCar .content .order-list-box .order-list li.first {
           padding-left: 0;
           border-left: 0; }
-        .mi_list .content .order-list-box .order-list i {
+        .shoppingCar .content .order-list-box .order-list i {
           font-size: 16px;
           line-height: 16px;
           vertical-align: -1px; }
-        .mi_list .content .order-list-box .order-list a:hover {
+        .shoppingCar .content .order-list-box .order-list a:hover {
           color: #ff6700; }
-      .mi_list .content .order-list-box .type-list {
+      .shoppingCar .content .order-list-box .type-list {
         float: right;
         height: 20px;
         margin: 0;
         padding: 0;
         list-style-type: none; }
-        .mi_list .content .order-list-box .type-list li {
+        .shoppingCar .content .order-list-box .type-list li {
           float: left;
           margin-left: 30px; }
-          .mi_list .content .order-list-box .type-list li a {
+          .shoppingCar .content .order-list-box .type-list li a {
             color: #424242;
             -webkit-transition: color .2s;
             transition: color .2s; }
-        .mi_list .content .order-list-box .type-list .checkbox {
+        .shoppingCar .content .order-list-box .type-list .checkbox {
           display: inline-block;
           width: 18px;
           height: 18px;
@@ -377,17 +568,17 @@ a:hover {
           font-size: 16px;
           line-height: 18px;
           text-align: center; }
-          .mi_list .content .order-list-box .type-list .checkbox i {
+          .shoppingCar .content .order-list-box .type-list .checkbox i {
             visibility: hidden; }
-        .mi_list .content .order-list-box .type-list a:hover {
+        .shoppingCar .content .order-list-box .type-list a:hover {
           color: #ff6700; }
-    .mi_list .content .goods-list-box {
+    .shoppingCar .content .goods-list-box {
       width: 1226px; }
-    .mi_list .content .goods-list {
+    .shoppingCar .content .goods-list {
       width: 1240px;
       margin: 0;
       list-style-type: none; }
-    .mi_list .content .goods-item {
+    .shoppingCar .content .goods-item {
       position: relative;
       float: left;
       width: 296px;
@@ -399,13 +590,13 @@ a:hover {
       background: #fff;
       -webkit-transition: -webkit-box-shadow .5s linear;
       transition: box-shadow .5s linear; }
-      .mi_list .content .goods-item .figure-img {
+      .shoppingCar .content .goods-item .figure-img {
         width: 200px;
         height: 200px;
         margin: 0 auto 16px; }
-        .mi_list .content .goods-item .figure-img a {
+        .shoppingCar .content .goods-item .figure-img a {
           display: block; }
-      .mi_list .content .goods-item .desc {
+      .shoppingCar .content .goods-item .desc {
         margin: 0 0 3px;
         height: 18px;
         font-size: 12px;
@@ -414,7 +605,7 @@ a:hover {
         overflow: hidden;
         _zoom: 1;
         color: #b0b0b0; }
-      .mi_list .content .goods-item .title {
+      .shoppingCar .content .goods-item .title {
         margin: 0 0 3px;
         font-size: 14px;
         font-weight: 400;
@@ -422,22 +613,22 @@ a:hover {
         white-space: nowrap;
         overflow: hidden;
         _zoom: 1; }
-        .mi_list .content .goods-item .title a {
+        .shoppingCar .content .goods-item .title a {
           color: #424242; }
-      .mi_list .content .goods-item .price {
+      .shoppingCar .content .goods-item .price {
         margin: 0 0 15px;
         color: #ff6700; }
-      .mi_list .content .goods-item .thumbs {
+      .shoppingCar .content .goods-item .thumbs {
         width: 100%;
         height: 36px;
         overflow: hidden;
         _zoom: 1; }
-      .mi_list .content .goods-item .thumb-list {
+      .shoppingCar .content .goods-item .thumb-list {
         margin: 0;
         padding: 0;
         list-style-type: none;
         font-size: 0; }
-        .mi_list .content .goods-item .thumb-list li {
+        .shoppingCar .content .goods-item .thumb-list li {
           display: inline-block;
           width: 34px;
           height: 34px;
@@ -446,20 +637,20 @@ a:hover {
           cursor: pointer;
           -webkit-transition: border-color .2s linear;
           transition: border-color .2s linear; }
-        .mi_list .content .goods-item .thumb-list img {
+        .shoppingCar .content .goods-item .thumb-list img {
           width: 34px;
           height: 34px; }
-      .mi_list .content .goods-item .actions i {
+      .shoppingCar .content .goods-item .actions i {
         font-size: 24px;
         line-height: 24px;
         vertical-align: -5px;
         color: #424242; }
-      .mi_list .content .goods-item .actions span {
+      .shoppingCar .content .goods-item .actions span {
         opacity: 0;
         filter: alpha(opacity=0) \9;
         -webkit-transition: opacity .2s linear;
         transition: opacity .2s linear; }
-      .mi_list .content .goods-item .actions .btn-like, .mi_list .content .goods-item .actions .btn-buy {
+      .shoppingCar .content .goods-item .actions .btn-like, .shoppingCar .content .goods-item .actions .btn-buy {
         position: absolute;
         top: 20px;
         z-index: 3;
@@ -471,15 +662,15 @@ a:hover {
         filter: alpha(opacity=0) \9;
         -webkit-transition: all .2s linear;
         transition: all .2s linear; }
-      .mi_list .content .goods-item .actions .btn-buy {
+      .shoppingCar .content .goods-item .actions .btn-buy {
         right: 20px; }
-      .mi_list .content .goods-item .actions .btn-buy:hover span, .mi_list .content .goods-item .actions .btn-like:hover span {
+      .shoppingCar .content .goods-item .actions .btn-buy:hover span, .shoppingCar .content .goods-item .actions .btn-like:hover span {
         opacity: 1; }
-      .mi_list .content .goods-item .actions .btn-like {
+      .shoppingCar .content .goods-item .actions .btn-like {
         left: 20px; }
-      .mi_list .content .goods-item li.active, .mi_list .content .goods-item li:hover {
+      .shoppingCar .content .goods-item li.active, .shoppingCar .content .goods-item li:hover {
         border-color: #ff6700; }
-      .mi_list .content .goods-item .flags {
+      .shoppingCar .content .goods-item .flags {
         position: absolute;
         left: 0;
         bottom: 0;
@@ -490,15 +681,15 @@ a:hover {
         text-align: left;
         overflow: hidden;
         _zoom: 1; }
-        .mi_list .content .goods-item .flags .flag {
+        .shoppingCar .content .goods-item .flags .flag {
           height: 18px;
           padding: 1px 20px;
           color: #fff; }
-        .mi_list .content .goods-item .flags .flag-saleoff {
+        .shoppingCar .content .goods-item .flags .flag-saleoff {
           background-color: #e53935; }
-        .mi_list .content .goods-item .flags .flag-new {
+        .shoppingCar .content .goods-item .flags .flag-new {
           background-color: #83c44e; }
-      .mi_list .content .goods-item .notice {
+      .shoppingCar .content .goods-item .notice {
         position: absolute;
         top: 10px;
         left: 10px;
@@ -510,16 +701,16 @@ a:hover {
         transform: translate3d(0, -10px, 0);
         -webkit-transition: all .2s linear;
         transition: all .2s linear; }
-    .mi_list .content .goods-item:hover .btn-like, .mi_list .content .goods-item:hover .btn-buy {
+    .shoppingCar .content .goods-item:hover .btn-like, .shoppingCar .content .goods-item:hover .btn-buy {
       opacity: 1; }
-    .mi_list .content .xm-pagenavi {
+    .shoppingCar .content .xm-pagenavi {
       height: 30px;
       padding: 15px 0;
       text-align: center; }
-      .mi_list .content .xm-pagenavi .iconfont {
+      .shoppingCar .content .xm-pagenavi .iconfont {
         font-size: 24px;
         vertical-align: bottom; }
-      .mi_list .content .xm-pagenavi .numbers {
+      .shoppingCar .content .xm-pagenavi .numbers {
         display: inline-block;
         width: 48px;
         height: 24px;
@@ -529,18 +720,18 @@ a:hover {
         font-weight: 200;
         line-height: 24px;
         color: #b0b0b0; }
-      .mi_list .content .xm-pagenavi .current {
+      .shoppingCar .content .xm-pagenavi .current {
         background-color: #757575;
         color: #fff; }
-      .mi_list .content .xm-pagenavi a.numbers {
+      .shoppingCar .content .xm-pagenavi a.numbers {
         -webkit-transition: all .2s linear;
         transition: all .2s linear; }
-      .mi_list .content .xm-pagenavi a.numbers:hover {
+      .shoppingCar .content .xm-pagenavi a.numbers:hover {
         background: #b0b0b0;
         color: #fff; }
-    .mi_list .content .xm-recommend-container {
+    .shoppingCar .content .xm-recommend-container {
       margin-top: 60px; }
-    .mi_list .content .xm-recommend-title {
+    .shoppingCar .content .xm-recommend-title {
       position: relative;
       margin: 0;
       height: 50px;
@@ -549,7 +740,7 @@ a:hover {
       color: #757575;
       border-top: 1px solid #e0e0e0;
       -webkit-font-smoothing: antialiased; }
-      .mi_list .content .xm-recommend-title span {
+      .shoppingCar .content .xm-recommend-title span {
         position: absolute;
         top: -20px;
         left: 372px;
@@ -559,63 +750,63 @@ a:hover {
         text-align: center;
         display: block;
         background-color: #f5f5f5; }
-    .mi_list .content .xm-recommend .btn-line-primary {
+    .shoppingCar .content .xm-recommend .btn-line-primary {
       border-color: #ff6700;
       background: #fff;
       color: #ff6700; }
-    .mi_list .content .xm-recommend .btn-line-primary:hover {
+    .shoppingCar .content .xm-recommend .btn-line-primary:hover {
       color: #fff;
       background-color: #f25807;
       border-color: #f25807; }
-    .mi_list .content .xm-recommend .xm-carousel-col-5-list li {
+    .shoppingCar .content .xm-recommend .xm-carousel-col-5-list li {
       float: left;
       width: 234px; }
-    .mi_list .content .xm-recommend ul li {
+    .shoppingCar .content .xm-recommend ul li {
       margin-bottom: 14px;
       height: 300px;
       background-color: #fff;
       text-align: center;
       position: relative; }
-    .mi_list .content .xm-recommend ul li {
+    .shoppingCar .content .xm-recommend ul li {
       margin-right: 14px;
       margin-left: 0; }
-    .mi_list .content .xm-recommend ul li:hover .xm-recommend-tips .btn {
+    .shoppingCar .content .xm-recommend ul li:hover .xm-recommend-tips .btn {
       display: block; }
-    .mi_list .content .xm-recommend ul.xm-carousel-list li {
+    .shoppingCar .content .xm-recommend ul.xm-carousel-list li {
       margin-right: 14px; }
-    .mi_list .content .xm-recommend dl dd {
+    .shoppingCar .content .xm-recommend dl dd {
       margin-left: 0; }
-    .mi_list .content .xm-recommend dl {
+    .shoppingCar .content .xm-recommend dl {
       padding: 0 20px;
       margin-bottom: 0; }
-      .mi_list .content .xm-recommend dl dt {
+      .shoppingCar .content .xm-recommend dl dt {
         padding: 40px 0 15px;
         height: 145px; }
-        .mi_list .content .xm-recommend dl dt img {
+        .shoppingCar .content .xm-recommend dl dt img {
           width: 140px;
           height: 140px; }
-    .mi_list .content .xm-recommend .xm-recommend-name {
+    .shoppingCar .content .xm-recommend .xm-recommend-name {
       margin-bottom: 10px;
       height: 18px;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
       _zoom: 1; }
-      .mi_list .content .xm-recommend .xm-recommend-name a {
+      .shoppingCar .content .xm-recommend .xm-recommend-name a {
         color: #333; }
-    .mi_list .content .xm-recommend .xm-recommend-price {
+    .shoppingCar .content .xm-recommend .xm-recommend-price {
       margin-bottom: 10px;
       color: #ff6700; }
-    .mi_list .content .xm-recommend .xm-recommend-tips {
+    .shoppingCar .content .xm-recommend .xm-recommend-tips {
       position: relative;
       color: #757575; }
-      .mi_list .content .xm-recommend .xm-recommend-tips .btn {
+      .shoppingCar .content .xm-recommend .xm-recommend-tips .btn {
         position: absolute;
         left: 37px;
         top: 0;
         width: 120px;
         display: none; }
-    .mi_list .content .xm-recommend .xm-recommend-notice {
+    .shoppingCar .content .xm-recommend .xm-recommend-notice {
       position: absolute;
       top: 0;
       left: 0;
@@ -627,49 +818,16 @@ a:hover {
       transform: translate3d(0, -10px, 0);
       -webkit-transition: all .2s linear;
       transition: all .2s linear; }
-    .mi_list .content .xm-recommend .xm-pagers-wrapper {
-      text-align: center; }
-    .mi_list .content .xm-recommend .xm-pagers .pager {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      padding: 10px;
-      margin: 0 2px;
-      cursor: pointer; }
-      .mi_list .content .xm-recommend .xm-pagers .pager .dot {
-        display: block;
-        width: 6px;
-        height: 6px;
-        border: 2px solid #f5f5f5;
-        border-radius: 6px;
-        text-align: left;
-        text-indent: -9999em;
-        overflow: hidden;
-        _zoom: 1;
-        background-color: #b0b0b0; }
-    .mi_list .content .xm-recommend .xm-pagers .pager-active {
-      cursor: default; }
-    .mi_list .content .xm-recommend ul li.pager {
-      background-color: transparent; }
-    .mi_list .content .xm-recommend ul li .dot {
-      -webkit-transition: -webkit-box-shadow .2s linear;
-      transition: box-shadow .2s linear; }
-    .mi_list .content .xm-recommend .xm-pagers .pager-active .dot, .mi_list .content .xm-recommend .xm-pagers .pager-active:hover .dot {
-      border-color: #ff6700;
-      background-color: #f5f5f5;
-      background-color: transparent; }
-    .mi_list .content .xm-recommend .xm-pagers .pager:hover .dot {
-      background-color: #ff6700; }
-  .mi_list .main {
+  .shoppingCar .main {
     width: 1226px;
     overflow: hidden;
     margin: 0 auto; }
-  .mi_list .site-footer .footer-service {
+  .shoppingCar .site-footer .footer-service {
     padding: 27px 0;
     border-bottom: 1px solid #e0e0e0; }
-    .mi_list .site-footer .footer-service .list-service {
+    .shoppingCar .site-footer .footer-service .list-service {
       overflow: hidden; }
-      .mi_list .site-footer .footer-service .list-service li {
+      .shoppingCar .site-footer .footer-service .list-service li {
         float: left;
         width: 19.8%;
         height: 25px;
@@ -677,101 +835,101 @@ a:hover {
         font-size: 16px;
         line-height: 25px;
         text-align: center; }
-        .mi_list .site-footer .footer-service .list-service li a {
+        .shoppingCar .site-footer .footer-service .list-service li a {
           color: #616161;
           -webkit-transition: color .2s;
           transition: color .2s; }
-      .mi_list .site-footer .footer-service .list-service li:first-child {
+      .shoppingCar .site-footer .footer-service .list-service li:first-child {
         border-left: 0; }
-      .mi_list .site-footer .footer-service .list-service .iconfont {
+      .shoppingCar .site-footer .footer-service .list-service .iconfont {
         margin-right: 6px;
         font-size: 24px;
         line-height: 24px;
         vertical-align: -4px; }
-  .mi_list .site-footer .footer-links {
+  .shoppingCar .site-footer .footer-links {
     padding: 40px 0;
     overflow: hidden; }
-    .mi_list .site-footer .footer-links .col-links {
+    .shoppingCar .site-footer .footer-links .col-links {
       float: left;
       width: 160px;
       height: 112px;
       margin: 0; }
-      .mi_list .site-footer .footer-links .col-links dt {
+      .shoppingCar .site-footer .footer-links .col-links dt {
         margin: -1px 0 26px;
         font-size: 14px;
         line-height: 1.25;
         color: #424242; }
-      .mi_list .site-footer .footer-links .col-links dd {
+      .shoppingCar .site-footer .footer-links .col-links dd {
         margin: 10px 0 0;
         font-size: 12px; }
-    .mi_list .site-footer .footer-links .col-contact {
+    .shoppingCar .site-footer .footer-links .col-contact {
       float: right;
       width: 251px;
       height: 112px;
       border-left: 1px solid #e0e0e0;
       text-align: center;
       color: #616161; }
-      .mi_list .site-footer .footer-links .col-contact .phone {
+      .shoppingCar .site-footer .footer-links .col-contact .phone {
         margin: 0 0 5px;
         font-size: 22px;
         line-height: 1;
         color: #ff6700; }
-      .mi_list .site-footer .footer-links .col-contact p {
+      .shoppingCar .site-footer .footer-links .col-contact p {
         margin: 0 0 16px;
         font-size: 12px; }
-      .mi_list .site-footer .footer-links .col-contact .btn-line-primary {
+      .shoppingCar .site-footer .footer-links .col-contact .btn-line-primary {
         border-color: #ff6700;
         background: #fff;
         color: #ff6700; }
-      .mi_list .site-footer .footer-links .col-contact .btn-line-primary:hover {
+      .shoppingCar .site-footer .footer-links .col-contact .btn-line-primary:hover {
         color: #fff;
         background-color: #f25807;
         border-color: #f25807; }
-      .mi_list .site-footer .footer-links .col-contact .btn-small {
+      .shoppingCar .site-footer .footer-links .col-contact .btn-small {
         width: 118px;
         height: 28px;
         font-size: 12px;
         line-height: 28px; }
-  .mi_list .site-info {
+  .shoppingCar .site-info {
     padding: 30px 0;
     font-size: 12px;
     background: #fafafa;
     overflow: hidden; }
-    .mi_list .site-info .logo {
+    .shoppingCar .site-info .logo {
       float: left;
       width: 57px;
       height: 57px;
       margin-right: 10px;
       text-indent: -9999em;
       background: url(../images/index/footer_login/logo-footer.png) no-repeat 50% 50%; }
-    .mi_list .site-info .info-text {
+    .shoppingCar .site-info .info-text {
       float: left;
       color: #b0b0b0; }
-      .mi_list .site-info .info-text p {
+      .shoppingCar .site-info .info-text p {
         margin: 0; }
-      .mi_list .site-info .info-text .sites {
+      .shoppingCar .site-info .info-text .sites {
         font-size: 0px; }
-        .mi_list .site-info .info-text .sites a {
+        .shoppingCar .site-info .info-text .sites a {
           font-size: 12px;
           color: #757575; }
-        .mi_list .site-info .info-text .sites a:hover {
+        .shoppingCar .site-info .info-text .sites a:hover {
           color: #ff6700; }
-        .mi_list .site-info .info-text .sites .sep {
+        .shoppingCar .site-info .info-text .sites .sep {
           margin: 0 .25em;
           font-family: sans-serif;
           font-size: 12px; }
-      .mi_list .site-info .info-text a {
+      .shoppingCar .site-info .info-text a {
         color: #b0b0b0; }
-    .mi_list .site-info .info-links {
+    .shoppingCar .site-info .info-links {
       float: right;
       _display: inline;
       height: 28px;
       margin: 4px 0 0; }
-      .mi_list .site-info .info-links img {
+      .shoppingCar .site-info .info-links img {
         width: auto;
         height: 28px;
         margin-left: 0px; }
-    .mi_list .site-info .slogan {
+    .shoppingCar .site-info .slogan {
       clear: both;
       overflow: hidden;
       margin: 30px auto 0;
