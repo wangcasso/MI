@@ -427,6 +427,8 @@ a:hover {
       .mi_list .content .goods-item .price {
         margin: 0 0 15px;
         color: #ff6700; }
+      .mi_list .content .goods-item .price del{
+        color: #b0b0b0;}
       .mi_list .content .goods-item .thumbs {
         width: 100%;
         height: 36px;

@@ -1,6 +1,5 @@
 define(['jquery'], function($) {
     let goodBox=$('.goods-item')
-    let sPicAll=$('.thumb-list')
     return {
         init(){
             this.getData()
@@ -10,12 +9,15 @@ define(['jquery'], function($) {
 
                 goodBox.eq(i).find('.title a').html(data[i].productName)
                 //商品名
-                goodBox.eq(i).find('.price').html(data[i].productPrice)
+                goodBox.eq(i).find('.price').html(data[i].productPrice+'元 ')
                 //商品价格
                 goodBox.eq(i).find('.del').html(data[i].delPrice)
                 //商品原价
                 if(data[i].saleoff){
                     goodBox.eq(i).find('.flags').append(`<div class="flag flag-saleoff">${data[i].saleoff}折促销</div>`)
+                }
+                if(data[i].delPrice){
+                    goodBox.eq(i).find('.price').append(`<del>${data[i].delPrice}元</del>`)
                 }
                 if(data[i].gift){
                     goodBox.eq(i).find('.flags').append("<div class='flag flag-gift'>有赠品</div>")
@@ -37,6 +39,7 @@ define(['jquery'], function($) {
                     $("<li><img/></li>").find('img').attr({src:url+arrS[j],title:arrtitle[j]}).closest('li').appendTo($(frag))
                 }
                 $(frag).appendTo(goodBox.eq(i).find('.thumb-list'))
+                
                 // // data[i].image
                 // 
             }
@@ -44,7 +47,7 @@ define(['jquery'], function($) {
         },
         event(){
             $('.thumb-list li img').mouseover(function(){
-                let mUrl= $(this).attr('src').replace("34x34","200x200")
+                let mUrl= $(this).attr('src').replace("(s)","(m)")
                 $(this).closest('.goods-item').find(".figure-img img").attr('src',mUrl)
                 if($(this).closest('li').siblings().length>0){
 
@@ -68,3 +71,6 @@ define(['jquery'], function($) {
 
     }   
 });
+
+
+
