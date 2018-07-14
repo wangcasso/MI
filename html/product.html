@@ -9,7 +9,7 @@
     <link rel="icon" href="images/index/tab.img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/reset.css">
-    <script src="js/jquery.js"></script>
+    <script src="js/require.js" data-main="js/main"></script>
 </head>
 
 <body>
@@ -231,10 +231,14 @@
 
         <!-- 底部 -->
      
-        <div id="lai"></div>
-        <script>
-            $("#lai").load("index.html #footer")
-        </script>
+        <div id="lai">
+            <script>
+                require(['jquery'], function () {
+                    $("#lai").load("index.html #footer")
+                }) 
+                
+            </script>
+        </div>
         <!-- <iframe   frameborder=0   border=0   width=100%   height=438.6   src="index.html" mce_src="index.html"></iframe> 
         <object type="text/x-scriptlet" data="index.html" width=100% height=300></object> -->
 </body>

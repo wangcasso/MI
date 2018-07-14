@@ -427,8 +427,8 @@ a:hover {
       .mi_list .content .goods-item .price {
         margin: 0 0 15px;
         color: #ff6700; }
-      .mi_list .content .goods-item .price del{
-        color: #b0b0b0;}
+        .mi_list .content .goods-item .price del {
+          color: #b0b0b0; }
       .mi_list .content .goods-item .thumbs {
         width: 100%;
         height: 36px;
@@ -501,7 +501,7 @@ a:hover {
         .mi_list .content .goods-item .flags .flag-new {
           background-color: #83c44e; }
         .mi_list .content .goods-item .flags .flag-gift {
-          background-color: #2196f3;}
+          background-color: #2196f3; }
       .mi_list .content .goods-item .notice {
         position: absolute;
         top: 10px;

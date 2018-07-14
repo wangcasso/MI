@@ -32,7 +32,6 @@ define(['jquery'], function($) {
                 let arrM=data[i].imageM.split('+')
                 let arrtitle=data[i].title.split('+')
                 url=data[i].url
-                // console.log(arr)
                 goodBox.eq(i).find('.figure-img img').eq(0).attr('src',url+arrM[0])
                 let frag=document.createDocumentFragment()
                 for(let j in arrS){
@@ -40,8 +39,7 @@ define(['jquery'], function($) {
                 }
                 $(frag).appendTo(goodBox.eq(i).find('.thumb-list'))
                 
-                // // data[i].image
-                // 
+                
             }
             this.event()
         },
@@ -59,9 +57,7 @@ define(['jquery'], function($) {
             _this=this
             $.post('php/goods.php', function(json) {
                 if(json.code == 200) {
-                // 遍历表格
-                //    console.log( JSON.stringify(json.data));
-                  
+            
                    _this.insertDom(json.data)
                 }
             }, "json");

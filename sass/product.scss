@@ -44,6 +44,10 @@
     margin: 0 .25em;
     font-family: sans-serif;
 }
+a:hover {
+    color: #ff6700;
+    text-decoration: none;
+}
 .product{
     font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 
@@ -320,6 +324,10 @@
                 margin: 17px 0 0 0;
                 a {
                     color: #616161;
+                }
+                a:hover {
+                    color: #ff6700;
+                    text-decoration: none;
                 }
                 .separator {
                     margin: 0 .25em;

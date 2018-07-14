@@ -43,6 +43,10 @@
   margin: 0 .25em;
   font-family: sans-serif; }
 
+a:hover {
+  color: #ff6700;
+  text-decoration: none; }
+
 .product {
   font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; }
   .product .main {
@@ -270,6 +274,9 @@
         margin: 17px 0 0 0; }
         .product .xm-product-box .nav-bar .right a {
           color: #616161; }
+        .product .xm-product-box .nav-bar .right a:hover {
+          color: #ff6700;
+          text-decoration: none; }
         .product .xm-product-box .nav-bar .right .separator {
           margin: 0 .25em;
           color: #e0e0e0; }
