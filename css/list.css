@@ -498,6 +498,8 @@ a:hover {
           background-color: #e53935; }
         .mi_list .content .goods-item .flags .flag-new {
           background-color: #83c44e; }
+        .mi_list .content .goods-item .flags .flag-gift {
+          background-color: #2196f3;}
       .mi_list .content .goods-item .notice {
         position: absolute;
         top: 10px;

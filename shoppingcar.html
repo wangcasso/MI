@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,293 +9,336 @@
     <link rel="stylesheet" href="css/shoppingcar.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" href="images/index/tab.img/favicon.ico" type="image/x-icon">
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="js/require.js" data-main="js/main"></script>
+
 </head>
+
 <body>
     <div class="shoppingCar">
         <div class="header">
-                <div class="site-header site-mini-header">
-                        <div class="container">
-                            <div class="header-logo">
-                                <a class="logo ir" href="index.html" title="小米官网" >小米官网</a>
-                            </div>
-                            <div class="header-title has-more" id="J_miniHeaderTitle"><h2>我的购物车</h2><p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p></div>
-                            <div class="topbar-info" id="J_userInfo">
-                            <a class="link" href="login.html">登录</a><span class="sep">|</span><a class="link" href="registe.html" >注册</a>        </div>
-                        </div>
+            <div class="site-header site-mini-header">
+                <div class="container">
+                    <div class="header-logo">
+                        <a class="logo ir" href="index.html" title="小米官网">小米官网</a>
                     </div>
+                    <div class="header-title has-more" id="J_miniHeaderTitle">
+                        <h2>我的购物车</h2>
+                        <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+                    </div>
+                    <div class="topbar-info" id="J_userInfo">
+                        <a class="link" href="login.html">登录</a>
+                        <span class="sep">|</span>
+                        <a class="link" href="registe.html">注册</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- 头部结束 -->
         <!-- 购物车列表 -->
         <div class="page-main">
 
-                <div class="container">
-                    <div class="cart-loading loading hide" id="J_cartLoading">
-                        <div class="loader"></div>
-                    </div>
-                    <div class="cart-empty hide" id="J_cartEmpty">
-                        <h2>您的购物车还是空的！</h2>
-                        <p class="login-desc">登录后将显示您之前加入的商品</p>
-                        <a href="index.html" class="btn btn-primary btn-login" >立即登录</a>
-                        <a href="//list.mi.com/0" class="btn btn-primary btn-shoping J_goShoping" >马上去购物</a>
-                    </div>
-                    <div id="J_cartBox" class="">
-                        <div class="cart-goods-list">
-                            <div class="list-head clearfix">
-                                <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">√</i>全选</div>
-                                <div class="col col-img">&nbsp;</div>
-                                <div class="col col-name">商品名称</div>
-                                <div class="col col-price">单价</div>
-                                <div class="col col-num">数量</div>
-                                <div class="col col-total">小计</div>
-                                <div class="col col-action">操作</div>
-                            </div>
-                            <div class="list-body" id="J_cartListBody">   <div class="item-box"> <div class="item-table J_cartGoods" > <div class="item-row clearfix"> <div class="col col-check">  <i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox" >√</i>  </div> <div class="col col-img">  <a href="//item.mi.com/1182100017.html" target="_blank"> <img alt="" src="//i1.mifile.cn/a1/pms_1527754949.17141338!80x80.jpg" width="80" height="80"> </a>  </div> <div class="col col-name">  <div class="tags">   </div>     <div class="tags">  </div>  <h3 class="name">  <a href="//item.mi.com/1182100017.html" target="_blank"> 小米手环3 </a>  </h3>     </div> <div class="col col-price"> 169元 </div> <div class="col col-num">  <div class="change-goods-num clearfix J_changeGoodsNum"> <a href="javascript:void(0)" class="J_minus"><i class="iconfont"></i></a> <input tyep="text" name="2182100017_0_buy" value="1" data-num="1" data-buylimit="10" autocomplete="off" class="goods-num J_goodsNum" "=""> <a href="javascript:void(0)" class="J_plus"><i class="iconfont"></i></a>   </div>  </div> <div class="col col-total"> 169元 <p class="pre-info">  </p> </div> <div class="col col-action"> <a id="2182100017_0_buy" data-msg="确定删除吗？" href="javascript:void(0);" title="删除" class="del J_delGoods"><i class="iconfont"></i></a> </div> </div> </div>           </div>      </div>
+            <div class="container">
+                <div class="cart-loading loading hide" id="J_cartLoading">
+                    <div class="loader"></div>
+                </div>
+                <div class="cart-empty hide" id="J_cartEmpty">
+                    <h2>您的购物车还是空的！</h2>
+                    <p class="login-desc">登录后将显示您之前加入的商品</p>
+                    <a href="index.html" class="btn btn-primary btn-login">立即登录</a>
+                    <a href="//list.mi.com/0" class="btn btn-primary btn-shoping J_goShoping">马上去购物</a>
+                </div>
+                <div id="J_cartBox" class="">
+                    <div class="cart-goods-list">
+                        <div class="list-head clearfix">
+                            <div class="col col-check">
+                                <i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">√</i>全选</div>
+                            <div class="col col-img">&nbsp;</div>
+                            <div class="col col-name">商品名称</div>
+                            <div class="col col-price">单价</div>
+                            <div class="col col-num">数量</div>
+                            <div class="col col-total">小计</div>
+                            <div class="col col-action">操作</div>
+                        </div>
+                        <div class="list-body" id="J_cartListBody">
+                            <div class="item-box">
+                                <div class="item-table J_cartGoods">
+                                    <div class="item-row clearfix">
+                                        <div class="col col-check">
+                                            <i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox">√</i>
+                                        </div>
+                                        <div class="col col-img">
+                                            <a href="//item.mi.com/1182100017.html" target="_blank">
+                                                <img alt="" src="//i1.mifile.cn/a1/pms_1527754949.17141338!80x80.jpg" width="80"
+                                                    height="80"> </a>
+                                        </div>
+                                        <div class="col col-name">
+                                            <div class="tags"> </div>
+                                            <div class="tags"> </div>
+                                            <h3 class="name">
+                                                <a href="//item.mi.com/1182100017.html" target="_blank"> 小米手环3 </a>
+                                            </h3>
+                                        </div>
+                                        <div class="col col-price"> 169元 </div>
+                                        <div class="col col-num">
+                                            <div class="change-goods-num clearfix J_changeGoodsNum">
+                                                <a href="javascript:void(0)" class="J_minus">
+                                                    <i class="iconfont"></i>
+                                                </a>
+                                                <input tyep="text" name="2182100017_0_buy" value="1" data-num="1" data-buylimit="10"
+                                                    autocomplete="off" class="goods-num J_goodsNum" "=" "> <a href="javascript:void(0)
+                                                    " class="J_plus "><i class="iconfont "></i></a>   </div>  </div> <div class="col
+                                                    col-total "> 169元 <p class="pre-info ">  </p> </div> <div class="col col-action
+                                                    "> <a id="2182100017_0_buy " data-msg="确定删除吗？ " href="javascript:void(0);
+                                                    " title="删除 " class="del J_delGoods "><i class="iconfont "></i></a> </div> </div> </div>           </div>      </div>
                         </div>
                         <!-- 加价购 -->
-                        <div class="raise-buy-box" id="J_raiseBuyBox"> </div>
+                        <div class="raise-buy-box " id="J_raiseBuyBox "> </div>
             
-                        <div class="cart-bar clearfix" id="J_cartBar">
-                            <div class="section-left">
-                                <a href="//list.mi.com/0" class="back-shopping J_goShoping" data-stat-id="f4ca8c89f9929151" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-f4ca8c89f9929151', '//list.mi.com/0', 'pcpid', '']);">继续购物</a>
-                                <span class="cart-total">共 <i id="J_cartTotalNum">1</i> 件商品，已选择 <i id="J_selTotalNum">1</i> 件</span>
-                                <span class="cart-coudan hide" id="J_coudanTip">
-                                    ，还需 <i id="J_postFreeBalance">0.00</i> 元即可免邮费  <a href="javascript:void(0);" id="J_showCoudan" data-stat-id="3f29f4ca4f25c783" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-3f29f4ca4f25c783', 'javascript:void0', 'pcpid', '']);">立即凑单</a>
-                                </span>
+                        <div class="cart-bar clearfix " id="J_cartBar ">
+                            <div class="section-left ">
+                                <a href="//list.mi.com/0 " class="back-shopping J_goShoping " data-stat-id="f4ca8c89f9929151
+                                                    " onclick="_msq.push([ 'trackEvent', '5df97b551662ffe7-f4ca8c89f9929151',
+                                                    '//list.mi.com/0', 'pcpid', '']); ">继续购物</a>
+                                <span class="cart-total ">共 <i id="J_cartTotalNum ">1</i> 件商品，已选择 <i id="J_selTotalNum ">1</i> 件</span>
+                                <span class="cart-coudan hide " id="J_coudanTip ">
+                                    ，还需 <i id="J_postFreeBalance ">0.00</i> 元即可免邮费  <a href="javascript:void(0); " id="J_showCoudan
+                                                    " );">立即凑单</a>
+                                                </span>
+                                            </div>
+                                            <span class="activity-money hide">
+                                                活动优惠：减
+                                                <i id="J_cartActivityMoney">0</i> 元
+                                            </span>
+                                            <span class="total-price">
+                                                合计：
+                                                <em id="J_cartTotalPrice">169</em>元
+                                            </span>
+                                            <a href="javascript:void(0);" class="btn btn-a btn btn-primary" id="J_goCheckout">去结算</a>
+
+                                            <div class="no-select-tip hide" id="J_noSelectTip">
+                                                请勾选需要结算的商品
+                                                <i class="arrow arrow-a"></i>
+                                                <i class="arrow arrow-b"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-recommend hide" id="J_historyRecommend"></div>
+
+
+                                </div>
                             </div>
-                            <span class="activity-money hide">
-                                活动优惠：减 <i id="J_cartActivityMoney">0</i> 元
-                            </span>
-                            <span class="total-price">
-                                合计：<em id="J_cartTotalPrice">169</em>元
-                            </span>
-                            <a href="javascript:void(0);" class="btn btn-a btn btn-primary" id="J_goCheckout" data-stat-id="5597ae8d3693f409" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-5597ae8d3693f409', 'javascript:void0', 'pcpid', '']);">去结算</a>
-            
-                            <div class="no-select-tip hide" id="J_noSelectTip">
-                                请勾选需要结算的商品
-                                <i class="arrow arrow-a"></i>
-                                <i class="arrow arrow-b"></i>
+                            <!-- 为您推荐 -->
+                            <div class="content">
+                                <div id="J_renovateWrap" class="xm-recommend-container container xm-carousel-container">
+                                    <h2 class="xm-recommend-title">
+                                        <span>为您推荐</span>
+                                    </h2>
+                                    <div class="xm-recommend">
+                                        <div class="xm-carousel-wrapper" style="height: 320px; ">
+                                            <ul class="xm-carousel-col-5-list xm-carousel-list clearfix" style="width: 1240px; margin-left: 0px; transition: margin-left 0.5s ease;">
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1174900044.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1519609633.75918897!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1519609633.75918897!280x280.jpg  2x"
+                                                                    alt="红米5 移动4G+版 2GB内存"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1174900044.html">
+                                                                红米5 移动4G+版 2GB内存 </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">799元</dd>
+                                                        <dd class="xm-recommend-tips"> 96人好评
+                                                            <a href="//item.mi.com/cart/add/2174900026-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1171300111.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1491365468.1786002!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1491365468.1786002!280x280.jpg  2x"
+                                                                    alt="小米蓝牙触控语音遥控器"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1171300111.html">
+                                                                小米蓝牙触控语音遥控器 </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">99元</dd>
+                                                        <dd class="xm-recommend-tips"> 1902人好评
+                                                            <a href="//item.mi.com/cart/add/2171300034-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1170200014.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1486535960.91272690!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1486535960.91272690!280x280.jpg  2x"
+                                                                    alt="小米简约头层小牛皮钱包"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1170200014.html">
+                                                                小米简约头层小牛皮钱包 </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">129元</dd>
+                                                        <dd class="xm-recommend-tips"> 1.1万人好评
+                                                            <a href="//item.mi.com/cart/add/2170200014-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1182500049.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1529842939.94611849!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1529842939.94611849!280x280.jpg  2x"
+                                                                    alt="小米平板4 8英寸WIFI版 3GB内存"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1182500049.html">
+                                                                小米平板4 8英寸WIFI版 3GB内存 </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">1099元</dd>
+                                                        <dd class="xm-recommend-tips"> 213人好评
+                                                            <a href="//item.mi.com/cart/add/2182500041-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1182100017.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1527754949.17141338!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527754949.17141338!280x280.jpg  2x"
+                                                                    alt="小米手环3"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1182100017.html">
+                                                                小米手环3 </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">169元</dd>
+                                                        <dd class="xm-recommend-tips"> 1.3万人好评
+                                                            <a href="//item.mi.com/cart/add/2182100017-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1182100046.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1527684977.9168848!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527684977.9168848!280x280.jpg  2x"
+                                                                    alt="小米8 SE 全网通版 4GB内存 64GB"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1182100046.html">
+                                                                小米8 SE 全网通版 4GB内存 64GB </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">1799元</dd>
+                                                        <dd class="xm-recommend-tips"> 1282人好评
+                                                            <a href="//item.mi.com/cart/add/2182100046-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1182100038.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1527735198.95061!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527735198.95061!280x280.jpg  2x"
+                                                                    alt="小米8 全网通版 6GB内存 256GB"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1182100038.html">
+                                                                小米8 全网通版 6GB内存 256GB </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">3299元</dd>
+                                                        <dd class="xm-recommend-tips"> 2121人好评
+                                                            <a href="//item.mi.com/cart/add/2182100038-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1174200059.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1509723483.31416776!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1509723483.31416776!280x280.jpg  2x"
+                                                                    alt="小米MIX 2 全网通版 8GB内存 全陶瓷尊享版"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1174200059.html">
+                                                                小米MIX 2 全网通版 8GB内存 全陶瓷尊享版 </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">3299元</dd>
+                                                        <dd class="xm-recommend-tips"> 2182人好评
+                                                            <a href="//item.mi.com/cart/add/2174200042-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1181900023.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1526532545.37854625!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1526532545.37854625!280x280.jpg  2x"
+                                                                    alt="米家驱蚊器"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1181900023.html">
+                                                                米家驱蚊器 </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">59元</dd>
+                                                        <dd class="xm-recommend-tips"> 1289人好评
+                                                            <a href="//item.mi.com/cart/add/2181900018-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="J_xm-recommend-list">
+                                                    <dl>
+                                                        <dt>
+                                                            <a href="//item.mi.com/1181000005.html">
+                                                                <img src="//i1.mifile.cn/a1/pms_1522034059.32188382!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1522034059.32188382!280x280.jpg  2x"
+                                                                    alt="小米MIX 2S 全网通版 8GB内存 陶瓷尊享版 256GB"> </a>
+                                                        </dt>
+                                                        <dd class="xm-recommend-name">
+                                                            <a href="//item.mi.com/1181000005.html">
+                                                                小米MIX 2S 全网通版 8GB内存 陶瓷尊享版 256GB </a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-price">3999元</dd>
+                                                        <dd class="xm-recommend-tips"> 2060人好评
+                                                            <a href="//item.mi.com/cart/add/2181000005-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn">加入购物车</a>
+                                                        </dd>
+                                                        <dd class="xm-recommend-notice"></dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
+                            <!-- 底部开始 -->
+                            <div class="footer">
+                                <script>
+                                    require(['jquery'], function () {
+                                        $(".footer").load('index.html #footer')
+                                    })
+                                </script>
+                            </div>
+                            <script>
+                                require(['shoppingcar'], function (shoppingcar) {
+                                   shoppingcar.getData()
+                                }) 
+                            </script>
                         </div>
-                    </div>
-            
-                    <div class="cart-recommend hide" id="J_historyRecommend"></div>
-                    
-            
-                </div>
-            </div>
-        <!-- 为您推荐 -->
-        <div class="content">
-                <div id="J_renovateWrap" class="xm-recommend-container container xm-carousel-container" >
-                        <h2 class="xm-recommend-title">
-                            <span>为您推荐</span>
-                        </h2>
-                        <div class="xm-recommend">
-                            <div class="xm-carousel-wrapper" style="height: 320px; ">
-                                <ul class="xm-carousel-col-5-list xm-carousel-list clearfix" style="width: 1240px; margin-left: 0px; transition: margin-left 0.5s ease;">
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1174900044.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1519609633.75918897!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1519609633.75918897!280x280.jpg  2x"
-                                                        alt="红米5 移动4G+版 2GB内存"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1174900044.html" >
-                                                红米5 移动4G+版 2GB内存 </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">799元</dd>
-                                            <dd class="xm-recommend-tips"> 96人好评
-                                                <a href="//item.mi.com/cart/add/2174900026-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                    >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1171300111.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1491365468.1786002!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1491365468.1786002!280x280.jpg  2x"
-                                                        alt="小米蓝牙触控语音遥控器"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1171300111.html" >
-                                                小米蓝牙触控语音遥控器 </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">99元</dd>
-                                            <dd class="xm-recommend-tips"> 1902人好评
-                                                <a href="//item.mi.com/cart/add/2171300034-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                    >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1170200014.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1486535960.91272690!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1486535960.91272690!280x280.jpg  2x"
-                                                        alt="小米简约头层小牛皮钱包"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1170200014.html" >
-                                                小米简约头层小牛皮钱包 </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">129元</dd>
-                                            <dd class="xm-recommend-tips"> 1.1万人好评
-                                                <a href="//item.mi.com/cart/add/2170200014-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                    >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1182500049.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1529842939.94611849!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1529842939.94611849!280x280.jpg  2x"
-                                                        alt="小米平板4 8英寸WIFI版 3GB内存"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1182500049.html" >
-                                                小米平板4 8英寸WIFI版 3GB内存 </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">1099元</dd>
-                                            <dd class="xm-recommend-tips"> 213人好评
-                                                <a href="//item.mi.com/cart/add/2182500041-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                    >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1182100017.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1527754949.17141338!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527754949.17141338!280x280.jpg  2x"
-                                                        alt="小米手环3"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1182100017.html" >
-                                                小米手环3 </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">169元</dd>
-                                            <dd class="xm-recommend-tips"> 1.3万人好评
-                                                <a href="//item.mi.com/cart/add/2182100017-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                   >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1182100046.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1527684977.9168848!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527684977.9168848!280x280.jpg  2x"
-                                                        alt="小米8 SE 全网通版 4GB内存 64GB"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1182100046.html" >
-                                                小米8 SE 全网通版 4GB内存 64GB </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">1799元</dd>
-                                            <dd class="xm-recommend-tips"> 1282人好评
-                                                <a href="//item.mi.com/cart/add/2182100046-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                    >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1182100038.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1527735198.95061!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527735198.95061!280x280.jpg  2x"
-                                                        alt="小米8 全网通版 6GB内存 256GB"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1182100038.html" >
-                                                小米8 全网通版 6GB内存 256GB </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">3299元</dd>
-                                            <dd class="xm-recommend-tips"> 2121人好评
-                                                <a href="//item.mi.com/cart/add/2182100038-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                    >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1174200059.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1509723483.31416776!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1509723483.31416776!280x280.jpg  2x"
-                                                        alt="小米MIX 2 全网通版 8GB内存 全陶瓷尊享版"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1174200059.html" >
-                                                小米MIX 2 全网通版 8GB内存 全陶瓷尊享版 </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">3299元</dd>
-                                            <dd class="xm-recommend-tips"> 2182人好评
-                                                <a href="//item.mi.com/cart/add/2174200042-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                    >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1181900023.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1526532545.37854625!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1526532545.37854625!280x280.jpg  2x"
-                                                        alt="米家驱蚊器"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1181900023.html" >
-                                                米家驱蚊器 </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">59元</dd>
-                                            <dd class="xm-recommend-tips"> 1289人好评
-                                                <a href="//item.mi.com/cart/add/2181900018-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                   >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                    <li class="J_xm-recommend-list">
-                                        <dl>
-                                            <dt>
-                                                <a href="//item.mi.com/1181000005.html" >
-                                                    <img src="//i1.mifile.cn/a1/pms_1522034059.32188382!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1522034059.32188382!280x280.jpg  2x"
-                                                        alt="小米MIX 2S 全网通版 8GB内存 陶瓷尊享版 256GB"> </a>
-                                            </dt>
-                                            <dd class="xm-recommend-name">
-                                                <a href="//item.mi.com/1181000005.html" >
-                                                小米MIX 2S 全网通版 8GB内存 陶瓷尊享版 256GB </a>
-                                            </dd>
-                                            <dd class="xm-recommend-price">3999元</dd>
-                                            <dd class="xm-recommend-tips"> 2060人好评
-                                                <a href="//item.mi.com/cart/add/2181000005-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
-                                                    >加入购物车</a>
-                                            </dd>
-                                            <dd class="xm-recommend-notice"></dd>
-                                        </dl>
-                                    </li>
-                                </ul>
-                            </div>
-                           
-                        </div>
-                    </div>
-        </div>
-        <!-- 底部开始 -->
-        <div class="footer">
-                <script>
-                    $(".footer").load('index.html #footer')
-                </script>
-            </div>
-    </div>
 
 </body>
+
 </html>

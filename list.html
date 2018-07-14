@@ -7,22 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/index/tab.img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/list.css">
-    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/list.css?1">
+    <script src="js/require.js" data-main="js/main"></script>
     <title>小米手机原装配件-小米商城</title>
 </head>
 
 <body>
     <div class="mi_list">
+           
         <div class="header">
             <script>
-                $(".header").load('product.html #package_header')
+                require(['jquery'], function (shoppingcar) {
+                    $(".header").load('product.html #package_header')
+                }) 
             </script>
         </div>
         <!-- 头部结束 -->
         <div class="breadcrumbs">
             <div class="container">
-                <a href="//www.mi.com/index.html" data-stat-id="3775548324f5c917" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-3775548324f5c917', '//www.mi.com/index.html', 'pcpid', '']);">首页</a>
+                <a href="index.html" >首页</a>
                 <span class="sep">&gt;</span>
                 <span>所有商品</span>
             </div>
@@ -316,7 +319,7 @@
                 </div>
                 <div class="goods-list-box">
                     <div class="goods-list clearfix">
-                        <div class="goods-item" data-pid="7808">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
                                 <a href="#">
                                     <img src="//i1.mifile.cn/a1/pms_1522391647.00851451!200x200.jpg" width="200" height="200"
@@ -330,18 +333,15 @@
                             <p class="price">399元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li>
-                                        <img src="//i1.mifile.cn/a1/pms_1522391647.00851451!34x34.jpg" width="34" height="34"
-                                            alt="小米电视音响 白色">
-                                    </li>
+                                  
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" href="#">
+                                <a class="btn-like" href="#">
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" href="#">
+                                <a class="btn-buy " href="#">
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
@@ -366,24 +366,20 @@
                             </p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li>
-                                        <img src="//i1.mifile.cn/a1/pms_1468806372.46368911!34x34.jpg" width="34" height="34"
-                                            title="米家小白智能摄像机 白色" alt="米家小白智能摄像机 白色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" href="#">
+                                <a class="btn-like" href="#">
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" href="#">
+                                <a class="btn-buy " href="#">
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-saleoff">9.4折促销</div>
                             </div>
                             <div class="notice"></div>
                         </div>
@@ -403,25 +399,20 @@
                             </p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li>
-                                        <img src="//i1.mifile.cn/a1/pms_1508230324.1313855!34x34.jpg" width="34" height="34"
-                                            title="小白智能摄像机大众版 白色" alt="小白智能摄像机大众版 白色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" href="#">
+                                <a class="btn-like" href="#">
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods"  href="#">
+                                <a class="btn-buy "  href="#">
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
-                                <div class="flag flag-saleoff">9.1折促销</div>
                             </div>
                             <div class="notice"></div>
                         </div>
@@ -439,18 +430,15 @@
                             <p class="price">199元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li>
-                                        <img src="//i1.mifile.cn/a1/pms_1488190122.83567909!34x34.jpg" width="34" height="34"
-                                            title="米家智能摄像机 1080P 白色" alt="米家智能摄像机 1080P 白色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" href="#">
+                                <a class="btn-like" href="#">
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" href="#">
+                                <a class="btn-buy " href="#">
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
@@ -459,7 +447,7 @@
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="7742">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
                                     <a href="#" >
                                     <img src="//i1.mifile.cn/a1/pms_1520216487.4264692!200x200.jpg" width="200" height="200"
@@ -473,24 +461,20 @@
                             <p class="price">349元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1520216487.4264692!34x34.jpg" width="34" height="34"
-                                            alt="知吾煮不锈钢炒锅 银白色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" >
+                                <a class="btn-like" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods"  href="#1" >
+                                <a class="btn-buy "  href="#1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
@@ -508,28 +492,24 @@
                             <p class="price">249元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1520220051.20749899!34x34.jpg" width="34" height="34"
-                                            alt="知吾煮不锈钢汤锅 银白色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" href="#" >
+                                <a class="btn-like" href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" href="#" >
+                                <a class="btn-buy " href="#" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8263">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
                                 <a href="#" >
                                     <img src="//i1.mifile.cn/a1/pms_1528368095.99082693!200x200.jpg" width="200" height="200"
@@ -543,26 +523,11 @@
                             <p class="price">199元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1528368095.99082693!34x34.jpg" width="34" height="34"
-                                            title="米家运动鞋2 男款 黑色" alt="米家运动鞋2 男款 黑色">
-                                    </li>
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1528368098.73151517!34x34.jpg" width="34" height="34"
-                                            title="米家运动鞋2 男款 白色" alt="米家运动鞋2 男款 白色">
-                                    </li>
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1528722952.42643707!34x34.jpg" width="34" height="34"
-                                            title="米家运动鞋2 男款 花蓝色" alt="米家运动鞋2 男款 花蓝色">
-                                    </li>
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1528722956.26268932!34x34.jpg" width="34" height="34"
-                                            title="米家运动鞋2 男款 深花灰色" alt="米家运动鞋2 男款 深花灰色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods"  href="#"  >
+                                <a class="btn-like"  href="#"  >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
@@ -572,11 +537,10 @@
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="4230">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
                                 <a href="#"  >
                                     <img src="//i1.mifile.cn/a1/pms_1508136069.96177734!200x200.jpg" width="200" height="200"
@@ -590,36 +554,24 @@
                             <p class="price">69元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1508136069.96177734!34x34.jpg" width="34" height="34"
-                                            title="AirPOP 防雾霾口罩 米家定制 黑" alt="AirPOP 防雾霾口罩 米家定制 黑">
-                                    </li>
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1508136074.95212891!34x34.jpg" width="34" height="34"
-                                            title="AirPOP 防雾霾口罩 米家定制 浅灰色" alt="AirPOP 防雾霾口罩 米家定制 浅灰色">
-                                    </li>
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1508136078.5673527!34x34.jpg" width="34" height="34"
-                                            title="AirPOP 防雾霾口罩 米家定制 红" alt="AirPOP 防雾霾口罩 米家定制 红">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods"  href="#"  >
+                                <a class="btn-like"  href="#"  >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods"   href="#"  >
+                                <a class="btn-buy "   href="#"  >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8264">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
                                 <a href="#"  >
                                     <img src="//i1.mifile.cn/a1/pms_1528368134.1866114!200x200.jpg" width="200" height="200"
@@ -633,18 +585,11 @@
                             <p class="price">199元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li >
-                                        <img src="//i1.mifile.cn/a1/pms_1528368134.1866114!34x34.jpg" width="34" height="34"
-                                            title="米家运动鞋2 女款 白色" alt="米家运动鞋2 女款 白色">
-                                    </li>
-                                    <li ></li>
-                                        <img src="//i1.mifile.cn/a1/pms_1528368139.69173925!34x34.jpg" width="34" height="34"
-                                            title="米家运动鞋2 女款 橘色" alt="米家运动鞋2 女款 橘色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods"  href="#"  >
+                                <a class="btn-like"  href="#"  >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
@@ -654,11 +599,10 @@
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8252">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
                                 <a href="#"  >
                                     <img src="//i1.mifile.cn/a1/pms_1528856155.75536120!200x200.jpg" width="200" height="200"
@@ -672,146 +616,83 @@
                             <p class="price">19元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li  >
-                                        <img src="//i1.mifile.cn/a1/pms_1528856155.75536120!34x34.jpg" width="34" height="34"
-                                            title="红米6 高透软胶保护套 透明" alt="红米6 高透软胶保护套 透明">
-                                    </li>
-                                    <li  >
-                                        <img src="//i1.mifile.cn/a1/pms_1528856159.53996381!34x34.jpg" width="34" height="34"
-                                            title="红米6 高透软胶保护套 透黑" alt="红米6 高透软胶保护套 透黑">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods"   href="#"  >
+                                <a class="btn-like"   href="#"  >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182300051" href="//cart.mi.com/cart/add/2182300051-0-1"  >
+                                <a class="btn-buy " href="//cart.mi.com/cart/add/2182300051-0-1"  >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="7895">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="//item.mi.com/1182500018.html?cfrom=list" data-stat-id="4a49a011cc36dab3" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-4a49a011cc36dab3', 'https://www.mi.com/mi6x/cfrom=list', 'pcpid', '']);">
+                                <a href="//item.mi.com/1182500018.html?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1529908826.32918327!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="//item.mi.com/1182500018.html?cfrom=list" data-stat-id="f66b1b7326a324d6" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-f66b1b7326a324d6', 'https://www.mi.com/mi6x/cfrom=list', 'pcpid', '']);">小米6X 全网通版 6GB内存 64GB</a>
+                                <a href="//item.mi.com/1182500018.html?cfrom=list" >小米6X 全网通版 6GB内存 64GB</a>
                             </h2>
                             <p class="price">2099元</p>
                             <div class="thumbs xm-carousel-container">
                                 <div class="xm-carousel-wrapper" style="height: 36px; overflow: hidden;">
-                                    <ul class="thumb-list clearfix" style="width: 264px; margin-left: 0px; transition: margin-left 0.2s linear;">
-                                        <li data-config="{&quot;cid&quot;:&quot;1182500018&quot;,&quot;gid&quot;:&quot;2182500011&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;2099\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:1,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                            class="active">
-                                            <img src="//i1.mifile.cn/a1/pms_1529908826.32918327!34x34.jpg" width="34" height="34"
-                                                title="小米6X 全网通版 6GB内存 64GB 初音绿" alt="小米6X 全网通版 6GB内存 64GB 初音绿">
-                                        </li>
-                                        <li data-config="{&quot;cid&quot;:&quot;1181500030&quot;,&quot;gid&quot;:&quot;2181500030&quot;,&quot;price&quot;:&quot;1799\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:1,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                            class="">
-                                            <img src="//i1.mifile.cn/a1/pms_1524621215.02256716!34x34.jpg" width="34" height="34"
-                                                title="小米6X 全网通版 6GB内存 64GB 冰川蓝" alt="小米6X 全网通版 6GB内存 64GB 冰川蓝">
-                                        </li>
-                                        <li data-config="{&quot;cid&quot;:&quot;1181500031&quot;,&quot;gid&quot;:&quot;2181500031&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1799\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:1,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                            class="">
-                                            <img src="//i1.mifile.cn/a1/pms_1524621219.48895957!34x34.jpg" width="34" height="34"
-                                                title="小米6X 全网通版 6GB内存 64GB 流沙金" alt="小米6X 全网通版 6GB内存 64GB 流沙金">
-                                        </li>
-                                        <li data-config="{&quot;cid&quot;:&quot;1181500032&quot;,&quot;gid&quot;:&quot;2181500032&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1799\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:1,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                            class="">
-                                            <img src="//i1.mifile.cn/a1/pms_1524621222.66011593!34x34.jpg" width="34" height="34"
-                                                title="小米6X 全网通版 6GB内存 64GB 曜石黑" alt="小米6X 全网通版 6GB内存 64GB 曜石黑">
-                                        </li>
-                                        <li data-config="{&quot;cid&quot;:&quot;1181500033&quot;,&quot;gid&quot;:&quot;2181500033&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1799\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:1,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                            class="">
-                                            <img src="//i1.mifile.cn/a1/pms_1524621225.83162698!34x34.jpg" width="34" height="34"
-                                                title="小米6X 全网通版 6GB内存 64GB 赤焰红" alt="小米6X 全网通版 6GB内存 64GB 赤焰红">
-                                        </li>
-                                        <li data-config="{&quot;cid&quot;:&quot;1181500034&quot;,&quot;gid&quot;:&quot;2181500034&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1799\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:1,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                            <img src="//i1.mifile.cn/a1/pms_1524621229.56695068!34x34.jpg" width="34" height="34"
-                                                title="小米6X 全网通版 6GB内存 64GB 樱花粉" alt="小米6X 全网通版 6GB内存 64GB 樱花粉">
-                                        </li>
+                                    <ul class="thumb-list clearfix" style=" margin-left: 0px; transition: margin-left 0.2s linear;">
+                                       
                                     </ul>
                                 </div>
                                 <div class="xm-controls xm-controls-small xm-carousel-controls">
-                                    <a class="control control-prev iconfont control-disabled" href="javascript: void(0);" data-stat-id="bfd9062878b587d1"
-                                        onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-bfd9062878b587d1', 'javascript:void0', 'pcpid', '']);"></a>
-                                    <a class="control control-next iconfont" href="javascript: void(0);" data-stat-id="363d7715c7c8ec85"
-                                        onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-363d7715c7c8ec85', 'javascript:void0', 'pcpid', '']);"></a>
+                                    <a class="control control-prev iconfont control-disabled" href="#"></a>
+                                    <a class="control control-next iconfont" href="#" ></a>
                                 </div>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182500018" href="javascript: void(0);" data-stat-id="589721a7ad299803" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-589721a7ad299803', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods btn-buy-detail" data-gid="2181500030" href="//order.mi.com/misc/subscribe/goods/2182500011"
-                                    data-stat-id="137b526e6cefb9dd" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-137b526e6cefb9dd', '//cart.mi.com/cart/add/2181500030-0-1', 'pcpid', '']);">
-                                    <span>到货提醒</span>
-                                    <i class="iconfont"></i>
+                                <a class="btn-buy  btn-buy-detail"href="//order.mi.com/misc/subscribe/goods/2182500011"
+                                    >
+                                    <span>加入购物车</span>
+                                    <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags"></div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8379">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="//item.mi.com/1182500021.html?cfrom=list" data-stat-id="41da96eee5da3816" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-41da96eee5da3816', 'https://www.mi.com/redmi6pro/cfrom=list', 'pcpid', '']);">
+                                <a href="//item.mi.com/1182500021.html?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1529635815.88254264!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="//item.mi.com/1182500021.html?cfrom=list" data-stat-id="82fccc6f42e9911f" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-82fccc6f42e9911f', 'https://www.mi.com/redmi6pro/cfrom=list', 'pcpid', '']);">红米6 Pro 全网通版 3GB内存 32GB</a>
+                                <a href="//item.mi.com/1182500021.html?cfrom=list" >红米6 Pro 全网通版 3GB内存 32GB</a>
                             </h2>
                             <p class="price">999元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500021&quot;,&quot;gid&quot;:&quot;2182500013&quot;,&quot;price&quot;:&quot;999\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                        class="active">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635815.88254264!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 3GB内存 32GB 流沙金" alt="红米6 Pro 全网通版 3GB内存 32GB 流沙金">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500022&quot;,&quot;gid&quot;:&quot;2182500014&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;999\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                        class="">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635818.45924573!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 3GB内存 32GB 曜石黑" alt="红米6 Pro 全网通版 3GB内存 32GB 曜石黑">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500023&quot;,&quot;gid&quot;:&quot;2182500015&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;999\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                        class="">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635824.22124672!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 3GB内存 32GB 樱花粉" alt="红米6 Pro 全网通版 3GB内存 32GB 樱花粉">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500024&quot;,&quot;gid&quot;:&quot;2182500016&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;999\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                        class="">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635825.55427851!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 3GB内存 32GB 巴厘蓝" alt="红米6 Pro 全网通版 3GB内存 32GB 巴厘蓝">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500025&quot;,&quot;gid&quot;:&quot;2182500017&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;999\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:1,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                        class="">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635829.58326048!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 3GB内存 32GB 赤焰红" alt="红米6 Pro 全网通版 3GB内存 32GB 赤焰红">
-                                    </li>
+                                    
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182500021" href="javascript: void(0);" data-stat-id="63bb4bb1805c0ae6" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-63bb4bb1805c0ae6', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182500013" href="//cart.mi.com/cart/add/2182500013-0-1" data-stat-id="02dd2b2440e56940"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-02dd2b2440e56940', '//cart.mi.com/cart/add/2182500013-0-1', 'pcpid', '']);">
+                                <a class="btn-buy " href="//cart.mi.com/cart/add/2182500013-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
@@ -819,49 +700,29 @@
                             <div class="flags"></div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8381">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="https://www.mi.com/redmi6pro/?cfrom=list" data-stat-id="d1a02aff71df98a9" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-d1a02aff71df98a9', 'https://www.mi.com/redmi6pro/cfrom=list', 'pcpid', '']);">
+                                <a href="https://www.mi.com/redmi6pro/?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1529635742.77997101!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="https://www.mi.com/redmi6pro/?cfrom=list" data-stat-id="e6c615a87aead251" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-e6c615a87aead251', 'https://www.mi.com/redmi6pro/cfrom=list', 'pcpid', '']);">红米6 Pro 全网通版 4GB内存 64GB</a>
+                                <a href="https://www.mi.com/redmi6pro/?cfrom=list" >红米6 Pro 全网通版 4GB内存 64GB</a>
                             </h2>
                             <p class="price">1299元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500031&quot;,&quot;gid&quot;:&quot;2182500023&quot;,&quot;price&quot;:&quot;1299\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635742.77997101!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 64GB 流沙金" alt="红米6 Pro 全网通版 4GB内存 64GB 流沙金">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500032&quot;,&quot;gid&quot;:&quot;2182500024&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1299\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635747.42979757!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 64GB 曜石黑" alt="红米6 Pro 全网通版 4GB内存 64GB 曜石黑">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500033&quot;,&quot;gid&quot;:&quot;2182500025&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1299\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635751.98631070!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 64GB 樱花粉" alt="红米6 Pro 全网通版 4GB内存 64GB 樱花粉">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500034&quot;,&quot;gid&quot;:&quot;2182500026&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1299\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635755.77418207!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 64GB 巴厘蓝" alt="红米6 Pro 全网通版 4GB内存 64GB 巴厘蓝">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500035&quot;,&quot;gid&quot;:&quot;2182500027&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1299\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:1,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635759.90299379!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 64GB 赤焰红" alt="红米6 Pro 全网通版 4GB内存 64GB 赤焰红">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182500031" href="javascript: void(0);" data-stat-id="fb56df4a2dfed8ae" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-fb56df4a2dfed8ae', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like" href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182500023" href="//cart.mi.com/cart/add/2182500023-0-1" data-stat-id="e9f206672af81bb9"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-e9f206672af81bb9', '//cart.mi.com/cart/add/2182500023-0-1', 'pcpid', '']);">
+                                <a class="btn-buy "  href="//cart.mi.com/cart/add/2182500023-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
@@ -870,45 +731,29 @@
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8586">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="https://www.mi.com/redmi6a/?cfrom=list" data-stat-id="e3f538ceb66916bd" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-e3f538ceb66916bd', 'https://www.mi.com/redmi6a/cfrom=list', 'pcpid', '']);">
+                                <a href="https://www.mi.com/redmi6a/?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1531116730.76137577!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="https://www.mi.com/redmi6a/?cfrom=list" data-stat-id="d276be0c158fefab" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-d276be0c158fefab', 'https://www.mi.com/redmi6a/cfrom=list', 'pcpid', '']);">红米6A 全网通版 3GB内存 32GB</a>
+                                <a href="https://www.mi.com/redmi6a/?cfrom=list" >红米6A 全网通版 3GB内存 32GB</a>
                             </h2>
                             <p class="price">699元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1182800001&quot;,&quot;gid&quot;:&quot;2182800001&quot;,&quot;price&quot;:&quot;699\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1531116730.76137577!34x34.jpg" width="34" height="34"
-                                            title="红米6A 全网通版 3GB内存 32GB 流沙金" alt="红米6A 全网通版 3GB内存 32GB 流沙金">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182800002&quot;,&quot;gid&quot;:&quot;2182800002&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;699\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:1,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1531116735.69081092!34x34.jpg" width="34" height="34"
-                                            title="红米6A 全网通版 3GB内存 32GB 铂银灰" alt="红米6A 全网通版 3GB内存 32GB 铂银灰">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182800003&quot;,&quot;gid&quot;:&quot;2182800003&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;699\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:1,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1531116741.87478935!34x34.jpg" width="34" height="34"
-                                            title="红米6A 全网通版 3GB内存 32GB 樱花粉" alt="红米6A 全网通版 3GB内存 32GB 樱花粉">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182800004&quot;,&quot;gid&quot;:&quot;2182800004&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;699\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:1,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1531116745.24854043!34x34.jpg" width="34" height="34"
-                                            title="红米6A 全网通版 3GB内存 32GB 巴厘蓝" alt="红米6A 全网通版 3GB内存 32GB 巴厘蓝">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182800001" href="javascript: void(0);" data-stat-id="1604322a7a87cbe9" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-1604322a7a87cbe9', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182800001" href="//cart.mi.com/cart/add/2182800001-0-1" data-stat-id="3a6824a4ce8c30e9"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-3a6824a4ce8c30e9', '//cart.mi.com/cart/add/2182800001-0-1', 'pcpid', '']);">
+                                <a class="btn-buy "href="//cart.mi.com/cart/add/2182800001-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
@@ -917,45 +762,29 @@
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8380">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="https://www.mi.com/redmi6pro/?cfrom=list" data-stat-id="db181f31c09270c0" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-db181f31c09270c0', 'https://www.mi.com/redmi6pro/cfrom=list', 'pcpid', '']);">
+                                <a href="https://www.mi.com/redmi6pro/?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1529635780.06292398!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="https://www.mi.com/redmi6pro/?cfrom=list" data-stat-id="2acbed835924b963" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-2acbed835924b963', 'https://www.mi.com/redmi6pro/cfrom=list', 'pcpid', '']);">红米6 Pro 全网通版 4GB内存 32GB</a>
+                                <a href="https://www.mi.com/redmi6pro/?cfrom=list" >红米6 Pro 全网通版 4GB内存 32GB</a>
                             </h2>
                             <p class="price">1199元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500026&quot;,&quot;gid&quot;:&quot;2182500018&quot;,&quot;price&quot;:&quot;1199\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635780.06292398!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 32GB 巴厘蓝" alt="红米6 Pro 全网通版 4GB内存 32GB 巴厘蓝">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500027&quot;,&quot;gid&quot;:&quot;2182500019&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1199\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635784.09733529!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 32GB 曜石黑" alt="红米6 Pro 全网通版 4GB内存 32GB 曜石黑">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500028&quot;,&quot;gid&quot;:&quot;2182500020&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1199\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635788.52382428!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 32GB 流沙金" alt="红米6 Pro 全网通版 4GB内存 32GB 流沙金">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182500029&quot;,&quot;gid&quot;:&quot;2182500021&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1199\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529635791.85727525!34x34.jpg" width="34" height="34"
-                                            title="红米6 Pro 全网通版 4GB内存 32GB 樱花粉" alt="红米6 Pro 全网通版 4GB内存 32GB 樱花粉">
-                                    </li>
+                                  
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182500026" href="javascript: void(0);" data-stat-id="5ba876d81786a30d" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-5ba876d81786a30d', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182500018" href="//cart.mi.com/cart/add/2182500018-0-1" data-stat-id="9b3f7c59299b9299"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-9b3f7c59299b9299', '//cart.mi.com/cart/add/2182500018-0-1', 'pcpid', '']);">
+                                <a class="btn-buy " href="//cart.mi.com/cart/add/2182500018-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
@@ -964,212 +793,155 @@
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8052">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="//item.mi.com/1181900028.html?cfrom=list" data-stat-id="4b51cd012cda0d70" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-4b51cd012cda0d70', '//item.mi.com/1181900028.htmlcfrom=list', 'pcpid', '']);">
+                                <a href="//item.mi.com/1181900028.html?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1526349453.25069351!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc">适用于 红米S2</p>
                             <h2 class="title">
-                                <a href="//item.mi.com/1181900028.html?cfrom=list" data-stat-id="62a4ba3514e3b67e" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-62a4ba3514e3b67e', '//item.mi.com/1181900028.htmlcfrom=list', 'pcpid', '']);">红米S2 网眼保护壳</a>
+                                <a href="//item.mi.com/1181900028.html?cfrom=list" >红米S2 网眼保护壳</a>
                             </h2>
                             <p class="price">19元
                                 <del>29元</del>
                             </p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900028&quot;,&quot;gid&quot;:&quot;2181900022&quot;,&quot;price&quot;:&quot;19\u5143 <del>29\u5143<\/del>&quot;,&quot;discount&quot;:&quot;7&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1526349453.25069351!34x34.jpg" width="34" height="34"
-                                            title="红米S2 网眼保护壳 黑色" alt="红米S2 网眼保护壳 黑色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900029&quot;,&quot;gid&quot;:&quot;2181900023&quot;,&quot;discount&quot;:&quot;7&quot;,&quot;price&quot;:&quot;19\u5143 <del>29\u5143<\/del>&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1526350825.98372837!34x34.jpg" width="34" height="34"
-                                            title="红米S2 网眼保护壳 蓝色" alt="红米S2 网眼保护壳 蓝色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900030&quot;,&quot;gid&quot;:&quot;2181900024&quot;,&quot;discount&quot;:&quot;7&quot;,&quot;price&quot;:&quot;19\u5143 <del>29\u5143<\/del>&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1526350829.53858598!34x34.jpg" width="34" height="34"
-                                            title="红米S2 网眼保护壳 红色" alt="红米S2 网眼保护壳 红色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1181900028" href="javascript: void(0);" data-stat-id="fd6ded85c5c7f39f" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-fd6ded85c5c7f39f', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2181900022" href="//cart.mi.com/cart/add/2181900022-0-1" data-stat-id="5e28c4270e0e39bc"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-5e28c4270e0e39bc', '//cart.mi.com/cart/add/2181900022-0-1', 'pcpid', '']);">
+                                <a class="btn-buy " href="//cart.mi.com/cart/add/2181900022-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
-                                <div class="flag flag-saleoff">7折促销</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="7910">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="//item.mi.com/1181600008.html?cfrom=list" data-stat-id="4eb93efc058c5536" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-4eb93efc058c5536', '//item.mi.com/1181600008.htmlcfrom=list', 'pcpid', '']);">
+                                <a href="//item.mi.com/1181600008.html?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1524466977.94886383!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc">适用于 小米6X</p>
                             <h2 class="title">
-                                <a href="//item.mi.com/1181600008.html?cfrom=list" data-stat-id="594ad6bd9559f01e" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-594ad6bd9559f01e', '//item.mi.com/1181600008.htmlcfrom=list', 'pcpid', '']);">小米6X 极简保护壳</a>
+                                <a href="//item.mi.com/1181600008.html?cfrom=list" >小米6X 极简保护壳</a>
                             </h2>
                             <p class="price">29元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1181600008&quot;,&quot;gid&quot;:&quot;2181600007&quot;,&quot;price&quot;:&quot;29\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1524466977.94886383!34x34.jpg" width="34" height="34"
-                                            title="小米6X 极简保护壳 红色" alt="小米6X 极简保护壳 红色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1181600009&quot;,&quot;gid&quot;:&quot;2181600008&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;29\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1524467046.18799928!34x34.jpg" width="34" height="34"
-                                            title="小米6X 极简保护壳 黑色" alt="小米6X 极简保护壳 黑色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1181600010&quot;,&quot;gid&quot;:&quot;2181600009&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;29\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1524467049.79073272!34x34.jpg" width="34" height="34"
-                                            title="小米6X 极简保护壳 蓝色" alt="小米6X 极简保护壳 蓝色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1181600008" href="javascript: void(0);" data-stat-id="298be3b4de3811de" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-298be3b4de3811de', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2181600007" href="//cart.mi.com/cart/add/2181600007-0-1" data-stat-id="027793c28427364d"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-027793c28427364d', '//cart.mi.com/cart/add/2181600007-0-1', 'pcpid', '']);">
+                                <a class="btn-buy " href="//cart.mi.com/cart/add/2181600007-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8107">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="https://www.mi.com/scooter-baby/?cfrom=list" data-stat-id="ba4836ce18586dcb" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-ba4836ce18586dcb', 'https://www.mi.com/scooter-baby/cfrom=list', 'pcpid', '']);">
+                                <a href="https://www.mi.com/scooter-baby/?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1526641841.9467309!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="https://www.mi.com/scooter-baby/?cfrom=list" data-stat-id="794abf746ef43962" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-794abf746ef43962', 'https://www.mi.com/scooter-baby/cfrom=list', 'pcpid', '']);">米兔儿童滑板车</a>
+                                <a href="https://www.mi.com/scooter-baby/?cfrom=list" >米兔儿童滑板车</a>
                             </h2>
                             <p class="price">249元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1182000048&quot;,&quot;gid&quot;:&quot;2182000040&quot;,&quot;price&quot;:&quot;249\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1526641841.9467309!34x34.jpg" width="34" height="34"
-                                            alt="米兔儿童滑板车 粉色">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182000048" href="javascript: void(0);" data-stat-id="98d7c65bcb20fcb1" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-98d7c65bcb20fcb1', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like" href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182000040" href="//cart.mi.com/cart/add/2182000040-0-1" data-stat-id="8f2b3ad374fd25a6"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-8f2b3ad374fd25a6', '//cart.mi.com/cart/add/2182000040-0-1', 'pcpid', '']);">
+                                <a class="btn-buy "href="//cart.mi.com/cart/add/2182000040-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8138">
+                        <div class="goods-item">
                             <div class="figure figure-img">
-                                <a href="//item.mi.com/1182100021.html?cfrom=list" data-stat-id="6d1e13b3373f8c8e" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-6d1e13b3373f8c8e', '//item.mi.com/1182100021.htmlcfrom=list', 'pcpid', '']);">
+                                <a href="//item.mi.com/1182100021.html?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1527840795.6763911!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc">适用于 小米8</p>
                             <h2 class="title">
-                                <a href="//item.mi.com/1182100021.html?cfrom=list" data-stat-id="9dc418d64b238865" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-9dc418d64b238865', '//item.mi.com/1182100021.htmlcfrom=list', 'pcpid', '']);">小米8 硅胶保护套</a>
+                                <a href="//item.mi.com/1182100021.html?cfrom=list" >小米8 硅胶保护套</a>
                             </h2>
                             <p class="price">49元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1182100021&quot;,&quot;gid&quot;:&quot;2182100021&quot;,&quot;price&quot;:&quot;49\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1527840795.6763911!34x34.jpg" width="34" height="34"
-                                            title="小米8  硅胶保护套 黑色" alt="小米8  硅胶保护套 黑色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182100022&quot;,&quot;gid&quot;:&quot;2182100022&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;49\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1527840801.33455226!34x34.jpg" width="34" height="34"
-                                            title="小米8  硅胶保护套 蓝色" alt="小米8  硅胶保护套 蓝色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182100023&quot;,&quot;gid&quot;:&quot;2182100023&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;49\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1527840806.60931300!34x34.jpg" width="34" height="34"
-                                            title="小米8  硅胶保护套 红色" alt="小米8  硅胶保护套 红色">
-                                    </li>
+                                    
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182100021" href="javascript: void(0);" data-stat-id="030cd39f34725115" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-030cd39f34725115', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182100021" href="//cart.mi.com/cart/add/2182100021-0-1" data-stat-id="ea2246dc1e08e8c7"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-ea2246dc1e08e8c7', '//cart.mi.com/cart/add/2182100021-0-1', 'pcpid', '']);">
+                                <a class="btn-buy " href="//cart.mi.com/cart/add/2182100021-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8398">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="//item.mi.com/1182600004.html?cfrom=list" data-stat-id="00b43efc0fda3f6c" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-00b43efc0fda3f6c', '//item.mi.com/1182600004.htmlcfrom=list', 'pcpid', '']);">
+                                <a href="//item.mi.com/1182600004.html?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1529921723.1136386!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="//item.mi.com/1182600004.html?cfrom=list" data-stat-id="b34567deffabfd19" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-b34567deffabfd19', '//item.mi.com/1182600004.htmlcfrom=list', 'pcpid', '']);">小米手环3腕带</a>
+                                <a href="//item.mi.com/1182600004.html?cfrom=list" >小米手环3腕带</a>
                             </h2>
                             <p class="price">19.9元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1182600004&quot;,&quot;gid&quot;:&quot;2182600004&quot;,&quot;price&quot;:&quot;19.9\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529921723.1136386!34x34.jpg" width="34" height="34"
-                                            title="小米手环3腕带 石墨黑" alt="小米手环3腕带 石墨黑">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182600005&quot;,&quot;gid&quot;:&quot;2182600005&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;19.9\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529921713.88899257!34x34.jpg" width="34" height="34"
-                                            title="小米手环3腕带 热力橙" alt="小米手环3腕带 热力橙">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182600006&quot;,&quot;gid&quot;:&quot;2182600006&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;19.9\u5143&quot;,&quot;new&quot;:0,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1529921709.81212951!34x34.jpg" width="34" height="34"
-                                            title="小米手环3腕带 深空蓝" alt="小米手环3腕带 深空蓝">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182600004" href="javascript: void(0);" data-stat-id="656a8ca2b83d7f34" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-656a8ca2b83d7f34', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like" href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182600004" href="//cart.mi.com/cart/add/2182600004-0-1" data-stat-id="1e2c3360aac86a10"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-1e2c3360aac86a10', '//cart.mi.com/cart/add/2182600004-0-1', 'pcpid', '']);">
+                                <a class="btn-buy " href="//cart.mi.com/cart/add/2182600004-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
@@ -1178,176 +950,126 @@
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8170">
+                        <div class="goods-item">
                             <div class="figure figure-img">
-                                <a href="//item.mi.com/1182200004.html?cfrom=list" data-stat-id="3822c60c0ae75d2f" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-3822c60c0ae75d2f', '//item.mi.com/1182200004.htmlcfrom=list', 'pcpid', '']);">
+                                <a href="//item.mi.com/1182200004.html?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1527836910.35259135!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc">适用于 小米8 SE</p>
                             <h2 class="title">
-                                <a href="//item.mi.com/1182200004.html?cfrom=list" data-stat-id="106a62e24b1b82cc" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-106a62e24b1b82cc', '//item.mi.com/1182200004.htmlcfrom=list', 'pcpid', '']);">小米 8 SE 硅胶保护套</a>
+                                <a href="//item.mi.com/1182200004.html?cfrom=list" >小米 8 SE 硅胶保护套</a>
                             </h2>
                             <p class="price">49元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1182200004&quot;,&quot;gid&quot;:&quot;2182200004&quot;,&quot;price&quot;:&quot;49\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1527836910.35259135!34x34.jpg" width="34" height="34"
-                                            title="小米 8 SE  硅胶保护套 蓝色" alt="小米 8 SE  硅胶保护套 蓝色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182200005&quot;,&quot;gid&quot;:&quot;2182200005&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;49\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1527836913.21121793!34x34.jpg" width="34" height="34"
-                                            title="小米 8 SE  硅胶保护套 红色" alt="小米 8 SE  硅胶保护套 红色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1182200006&quot;,&quot;gid&quot;:&quot;2182200006&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;49\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1527836916.25842035!34x34.jpg" width="34" height="34"
-                                            title="小米 8 SE  硅胶保护套 黑色" alt="小米 8 SE  硅胶保护套 黑色">
-                                    </li>
+                                    
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1182200004" href="javascript: void(0);" data-stat-id="b89d55866761ffae" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-b89d55866761ffae', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like" href="#">
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2182200004" href="//cart.mi.com/cart/add/2182200004-0-1" data-stat-id="fbb2f9cc9ac2c477"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-fbb2f9cc9ac2c477', '//cart.mi.com/cart/add/2182200004-0-1', 'pcpid', '']);">
+                                <a class="btn-buy "  href="//cart.mi.com/cart/add/2182200004-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8029">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="//item.mi.com/1181900006.html?cfrom=list" data-stat-id="f2427669224fe6a7" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-f2427669224fe6a7', 'https://www.mi.com/redmis2/cfrom=list', 'pcpid', '']);">
+                                <a href="//item.mi.com/1181900006.html?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1525853341.8312102!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="//item.mi.com/1181900006.html?cfrom=list" data-stat-id="3b0cf908acaad4b7" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-3b0cf908acaad4b7', 'https://www.mi.com/redmis2/cfrom=list', 'pcpid', '']);">红米S2 全网通版 3GB内存 32GB</a>
+                                <a href="//item.mi.com/1181900006.html?cfrom=list" >红米S2 全网通版 3GB内存 32GB</a>
                             </h2>
                             <p class="price">999元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900004&quot;,&quot;gid&quot;:&quot;2181900004&quot;,&quot;price&quot;:&quot;999\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1525938503.19967249!34x34.jpg" width="34" height="34"
-                                            title="红米S2 全网通版 3GB内存 32GB 铂银灰" alt="红米S2 全网通版 3GB内存 32GB 铂银灰">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900005&quot;,&quot;gid&quot;:&quot;2181900005&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;999\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1526552663.12712002!34x34.jpg" width="34" height="34"
-                                            title="红米S2 全网通版 3GB内存 32GB 香槟金" alt="红米S2 全网通版 3GB内存 32GB 香槟金">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900006&quot;,&quot;gid&quot;:&quot;2181900006&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;999\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}"
-                                        class="active">
-                                        <img src="//i1.mifile.cn/a1/pms_1525853341.8312102!34x34.jpg" width="34" height="34"
-                                            title="红米S2 全网通版 3GB内存 32GB 玫瑰金" alt="红米S2 全网通版 3GB内存 32GB 玫瑰金">
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1181900006" href="javascript: void(0);" data-stat-id="2f3dbe8559ab7ff8" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-2f3dbe8559ab7ff8', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2181900006" href="//cart.mi.com/cart/add/2181900006-0-1" data-stat-id="68cb2e221511f568"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-68cb2e221511f568', '//cart.mi.com/cart/add/2181900004-0-1', 'pcpid', '']);">
+                                <a class="btn-buy "  href="//cart.mi.com/cart/add/2181900006-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="8030">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="https://www.mi.com/redmis2/?cfrom=list" data-stat-id="6c7f5b8e5bcebf11" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-6c7f5b8e5bcebf11', 'https://www.mi.com/redmis2/cfrom=list', 'pcpid', '']);">
-                                    <img src="//i1.mifile.cn/a1/pms_1525938476.45866455!200x200.jpg" width="200" height="200"
-                                        alt="">
+                                <a href="https://www.mi.com/redmis2/?cfrom=list" >
+                                    <img src="//i1.mifile.cn/a1/pms_1525938476.45866455!200x200.jpg" width="200" height="200" alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="https://www.mi.com/redmis2/?cfrom=list" data-stat-id="62f41505fdb63776" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-62f41505fdb63776', 'https://www.mi.com/redmis2/cfrom=list', 'pcpid', '']);">红米S2 全网通版 4GB内存 64GB</a>
+                                <a href="https://www.mi.com/redmis2/?cfrom=list" >红米S2 全网通版 4GB内存 64GB</a>
                             </h2>
                             <p class="price">1299元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900007&quot;,&quot;gid&quot;:&quot;2181900007&quot;,&quot;price&quot;:&quot;1299\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1525938476.45866455!34x34.jpg" width="34" height="34"
-                                            title="红米S2 全网通版 4GB内存 64GB 铂银灰" alt="红米S2 全网通版 4GB内存 64GB 铂银灰">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900008&quot;,&quot;gid&quot;:&quot;2181900008&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1299\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1525853422.44059175!34x34.jpg" width="34" height="34"
-                                            title="红米S2 全网通版 4GB内存 64GB 香槟金" alt="红米S2 全网通版 4GB内存 64GB 香槟金">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1181900009&quot;,&quot;gid&quot;:&quot;2181900009&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;1299\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1525853425.14535199!34x34.jpg" width="34" height="34"
-                                            title="红米S2 全网通版 4GB内存 64GB 玫瑰金" alt="红米S2 全网通版 4GB内存 64GB 玫瑰金">
-                                    </li>
+                                    
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1181900007" href="javascript: void(0);" data-stat-id="8f74a969ffd002c5" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-8f74a969ffd002c5', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like" href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2181900007" href="//cart.mi.com/cart/add/2181900007-0-1" data-stat-id="b3d9133a1288ef52"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-b3d9133a1288ef52', '//cart.mi.com/cart/add/2181900007-0-1', 'pcpid', '']);">
+                                <a class="btn-buy " href="//cart.mi.com/cart/add/2181900007-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
-                        <div class="goods-item" data-pid="7210">
+                        <div class="goods-item" >
                             <div class="figure figure-img">
-                                <a href="https://www.mi.com/airpop/?cfrom=list" data-stat-id="75b94dc89a377387" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-75b94dc89a377387', 'https://www.mi.com/airpop/cfrom=list', 'pcpid', '']);">
+                                <a href="https://www.mi.com/airpop/?cfrom=list" >
                                     <img src="//i1.mifile.cn/a1/pms_1509434704.74911589!200x200.jpg" width="200" height="200"
                                         alt="">
                                 </a>
                             </div>
                             <p class="desc"></p>
                             <h2 class="title">
-                                <a href="https://www.mi.com/airpop/?cfrom=list" data-stat-id="f23e2936296ff0e8" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-f23e2936296ff0e8', 'https://www.mi.com/airpop/cfrom=list', 'pcpid', '']);">AirPOP Light 360°贴合防雾霾口罩 （1片装）米家定制</a>
+                                <a href="https://www.mi.com/airpop/?cfrom=list" >AirPOP Light 360°贴合防雾霾口罩 （1片装）米家定制</a>
                             </h2>
                             <p class="price">14.9元</p>
                             <div class="thumbs">
                                 <ul class="thumb-list clearfix">
-                                    <li data-config="{&quot;cid&quot;:&quot;1174400021&quot;,&quot;gid&quot;:&quot;2174400011&quot;,&quot;price&quot;:&quot;14.9\u5143&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1509434704.74911589!34x34.jpg" width="34" height="34"
-                                            title="AirPOP Light 360°贴合防雾霾口罩 （1片装）米家定制 白色" alt="AirPOP Light 360°贴合防雾霾口罩 （1片装）米家定制 白色">
-                                    </li>
-                                    <li data-config="{&quot;cid&quot;:&quot;1174400022&quot;,&quot;gid&quot;:&quot;2174400012&quot;,&quot;discount&quot;:&quot;0&quot;,&quot;price&quot;:&quot;14.9\u5143&quot;,&quot;new&quot;:1,&quot;is-cos&quot;:0,&quot;package&quot;:0,&quot;hasgift&quot;:0,&quot;postfree&quot;:0,&quot;postfreenum&quot;:1,&quot;cfrom&quot;:&quot;list&quot;}">
-                                        <img src="//i1.mifile.cn/a1/pms_1509434707.85964482!34x34.jpg" width="34" height="34"
-                                            title="AirPOP Light 360°贴合防雾霾口罩 （1片装）米家定制 黑色" alt="AirPOP Light 360°贴合防雾霾口罩 （1片装）米家定制 黑色">
-                                    </li>
+                                    
                                 </ul>
                             </div>
                             <div class="actions clearfix">
-                                <a class="btn-like J_likeGoods" data-cid="1174400021" href="javascript: void(0);" data-stat-id="9ed90a2bfc655028" onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-9ed90a2bfc655028', 'javascript:void0', 'pcpid', '']);">
+                                <a class="btn-like"  href="#" >
                                     <i class="iconfont"></i>
                                     <span>喜欢</span>
                                 </a>
-                                <a class="btn-buy J_buyGoods" data-gid="2174400011" href="//cart.mi.com/cart/add/2174400011-0-1" data-stat-id="caa5cf53445c704d"
-                                    onclick="_msq.push(['trackEvent', 'ffacb58b15d36b9d-caa5cf53445c704d', '//cart.mi.com/cart/add/2174400011-0-1', 'pcpid', '']);">
+                                <a class="btn-buy "href="//cart.mi.com/cart/add/2174400011-0-1" >
                                     <span>加入购物车</span>
                                     <i class="iconfont"></i>
                                 </a>
                             </div>
                             <div class="flags">
-                                <div class="flag flag-new">新品上架</div>
                             </div>
                             <div class="notice"></div>
                         </div>
@@ -1367,18 +1089,18 @@
                     </div>
                 </div>
             </div>
-            <div id="J_renovateWrap" class="xm-recommend-container container xm-carousel-container" >
+            <div  class="xm-recommend-container container xm-carousel-container" >
                 <h2 class="xm-recommend-title">
                     <span>您还看了</span>
                 </h2>
                 <div class="xm-recommend">
                     <div class="xm-carousel-wrapper" style="height: 320px; overflow: hidden;">
                         <ul class="xm-carousel-col-5-list xm-carousel-list clearfix" style="width: 2480px; margin-left: 0px; transition: margin-left 0.5s ease;">
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1174900044.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1519609633.75918897!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1519609633.75918897!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1519609633.75918897!140x140.jpg" 
                                                 alt="红米5 移动4G+版 2GB内存"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1387,17 +1109,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">799元</dd>
                                     <dd class="xm-recommend-tips"> 96人好评
-                                        <a href="//item.mi.com/cart/add/2174900026-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2174900026-0-1" class="btn btn-small btn-line-primary "
                                             >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1171300111.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1491365468.1786002!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1491365468.1786002!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1491365468.1786002!140x140.jpg" 
                                                 alt="小米蓝牙触控语音遥控器"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1406,17 +1128,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">99元</dd>
                                     <dd class="xm-recommend-tips"> 1902人好评
-                                        <a href="//item.mi.com/cart/add/2171300034-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2171300034-0-1" class="btn btn-small btn-line-primary "
                                             >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1170200014.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1486535960.91272690!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1486535960.91272690!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1486535960.91272690!140x140.jpg" 
                                                 alt="小米简约头层小牛皮钱包"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1425,17 +1147,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">129元</dd>
                                     <dd class="xm-recommend-tips"> 1.1万人好评
-                                        <a href="//item.mi.com/cart/add/2170200014-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2170200014-0-1" class="btn btn-small btn-line-primary "
                                             >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1182500049.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1529842939.94611849!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1529842939.94611849!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1529842939.94611849!140x140.jpg" 
                                                 alt="小米平板4 8英寸WIFI版 3GB内存"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1444,17 +1166,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">1099元</dd>
                                     <dd class="xm-recommend-tips"> 213人好评
-                                        <a href="//item.mi.com/cart/add/2182500041-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2182500041-0-1" class="btn btn-small btn-line-primary "
                                             >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1182100017.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1527754949.17141338!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527754949.17141338!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1527754949.17141338!140x140.jpg" 
                                                 alt="小米手环3"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1463,17 +1185,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">169元</dd>
                                     <dd class="xm-recommend-tips"> 1.3万人好评
-                                        <a href="//item.mi.com/cart/add/2182100017-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2182100017-0-1" class="btn btn-small btn-line-primary "
                                            >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1182100046.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1527684977.9168848!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527684977.9168848!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1527684977.9168848!140x140.jpg" 
                                                 alt="小米8 SE 全网通版 4GB内存 64GB"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1482,17 +1204,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">1799元</dd>
                                     <dd class="xm-recommend-tips"> 1282人好评
-                                        <a href="//item.mi.com/cart/add/2182100046-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2182100046-0-1" class="btn btn-small btn-line-primary "
                                             >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1182100038.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1527735198.95061!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1527735198.95061!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1527735198.95061!140x140.jpg" 
                                                 alt="小米8 全网通版 6GB内存 256GB"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1501,17 +1223,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">3299元</dd>
                                     <dd class="xm-recommend-tips"> 2121人好评
-                                        <a href="//item.mi.com/cart/add/2182100038-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2182100038-0-1" class="btn btn-small btn-line-primary "
                                             >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1174200059.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1509723483.31416776!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1509723483.31416776!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1509723483.31416776!140x140.jpg" 
                                                 alt="小米MIX 2 全网通版 8GB内存 全陶瓷尊享版"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1520,17 +1242,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">3299元</dd>
                                     <dd class="xm-recommend-tips"> 2182人好评
-                                        <a href="//item.mi.com/cart/add/2174200042-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2174200042-0-1" class="btn btn-small btn-line-primary "
                                             >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1181900023.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1526532545.37854625!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1526532545.37854625!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1526532545.37854625!140x140.jpg" 
                                                 alt="米家驱蚊器"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1539,17 +1261,17 @@
                                     </dd>
                                     <dd class="xm-recommend-price">59元</dd>
                                     <dd class="xm-recommend-tips"> 1289人好评
-                                        <a href="//item.mi.com/cart/add/2181900018-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2181900018-0-1" class="btn btn-small btn-line-primary "
                                            >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
                                 </dl>
                             </li>
-                            <li class="J_xm-recommend-list">
+                            <li class="">
                                 <dl>
                                     <dt>
                                         <a href="//item.mi.com/1181000005.html" >
-                                            <img src="//i1.mifile.cn/a1/pms_1522034059.32188382!140x140.jpg" srcset="//i1.mifile.cn/a1/pms_1522034059.32188382!280x280.jpg  2x"
+                                            <img src="//i1.mifile.cn/a1/pms_1522034059.32188382!140x140.jpg" 
                                                 alt="小米MIX 2S 全网通版 8GB内存 陶瓷尊享版 256GB"> </a>
                                     </dt>
                                     <dd class="xm-recommend-name">
@@ -1558,7 +1280,7 @@
                                     </dd>
                                     <dd class="xm-recommend-price">3999元</dd>
                                     <dd class="xm-recommend-tips"> 2060人好评
-                                        <a href="//item.mi.com/cart/add/2181000005-0-1" class="btn btn-small btn-line-primary J_xm-recommend-btn"
+                                        <a href="//item.mi.com/cart/add/2181000005-0-1" class="btn btn-small btn-line-primary "
                                             >加入购物车</a>
                                     </dd>
                                     <dd class="xm-recommend-notice"></dd>
@@ -1583,10 +1305,17 @@
         <!-- 底部开始 -->
         <div class="footer">
             <script>
-                $(".footer").load('index.html #footer')
+                require(['jquery'], function (shoppingcar) {
+                    $(".footer").load('index.html #footer')
+                }) 
             </script>
         </div>
     </div>
 </body>
+<script>
+    require(['list'], function (shoppingcar) {
+       shoppingcar.init()
+    }) 
+</script>
 
 </html>
