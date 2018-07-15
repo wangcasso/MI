@@ -3,6 +3,7 @@ define(['jquery'], function($) {
     return {
         init(){
             this.getData()
+            console.log(1)
         },
         insertDom(data){
             for(let i=0;i<goodBox.length;i++){
@@ -13,6 +14,10 @@ define(['jquery'], function($) {
                 //商品价格
                 goodBox.eq(i).find('.del').html(data[i].delPrice)
                 //商品原价
+                goodBox.eq(i).find('.figure-img a').attr('href',`product.html?id=${data[i].id}`)
+                //图片链接
+                goodBox.eq(i).find('.title a').attr('href',`product.html?id=${data[i].id}`)
+                //标题链接
                 if(data[i].saleoff){
                     goodBox.eq(i).find('.flags').append(`<div class="flag flag-saleoff">${data[i].saleoff}折促销</div>`)
                 }
@@ -55,7 +60,7 @@ define(['jquery'], function($) {
         },
         getData() {
             _this=this
-            $.post('php/goods.php', function(json) {
+            $.post('php/list.php', function(json) {
                 if(json.code == 200) {
             
                    _this.insertDom(json.data)

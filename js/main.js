@@ -2,6 +2,7 @@ require.config({
     paths: {
         'jquery': 'jquery',
         'shoppingcar':'shoppingcar',
-        'list':'list'
+        'list':'list',
+        'product':'product'
     }
 })
