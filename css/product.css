@@ -349,6 +349,8 @@ a:hover {
           color: #616161; }
           .product .xm-buyBox .pro-info .pro-list ul li span {
             float: right; }
+        .product .xm-buyBox .pro-info .pro-list .addServer {
+          display: none; }
       .product .xm-buyBox .pro-info .pro-choose {
         overflow: hidden;
         margin-bottom: 30px; }
@@ -500,6 +502,9 @@ a:hover {
             right: 20px;
             bottom: 28px;
             color: #757575; }
+        .product .xm-buyBox .pro-info .list-choose ul .active em {
+          border-color: #ff6700;
+          background-color: #ff6700; }
       .product .xm-buyBox .pro-info .pro-title {
         line-height: 1;
         margin: 0;

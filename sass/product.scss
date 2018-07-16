@@ -429,6 +429,9 @@ a:hover {
                         }
                     }
                 }
+                .addServer{
+                    display:none;
+                }
             }
             
             .pro-choose {
@@ -620,6 +623,13 @@ a:hover {
                             color: #757575;
                         }
                         
+                    }
+                    .active{
+                      
+                        em{
+                            border-color: #ff6700;
+                            background-color: #ff6700; 
+                        }
                     }
                 }
             } 
